@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>여신금융협회</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+
+  <link rel="stylesheet" type="text/css" href="../../lib/css/common.css"/>
+  <link rel="stylesheet" type="text/css" href="../../lib/css/style.css"/>
+  <script type="text/javascript" src="../../lib/js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="../../lib/js/slick.min.js"></script>
+  <script type="text/javascript" src="../../lib/js/common.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../lib/css/slick.css" />
+
+</head>
+<body>
+  <div id="accessibility">
+  	<a href="#contents">본문 바로가기</a>
+  	<a href="#header-gnb">주요메뉴 바로가기</a>
+  </div>
+  <div id="wrap">
+    <div id="header" class="scroll">
+      <h1 class="logo">
+        <a href="/"><img src="../../images/common/top_logo.png" alt="여신금융협회"></a>
+      </h1>
+      <h1 class="logo open">
+        <a href="/"><img src="../../images/common/top_logo_ov.png" alt="여신금융협회"></a>
+      </h1>
+      <div class="gnb" id="header-gnb">
+        <ul class="depth01">
+          <li>
+            <a href="#">소비자 지원</a>
+            <div class="sub_area">
+              <div class="inner">
+                <ul class="depth02">
+                  <li>
+                    <a href="#">소비자 정보</a>
+                    <ul class="depth03">
+                      <li><a href="#">신용카드 관련 FAQ</a></li>
+                      <li><a href="#">신용카드 이용자 가이드</a></li>
+                      <li><a href="#">카드 분실 일괄신고 서비스</a></li>
+                      <li><a href="#">불법 금융 피해 예방 및 대처방안</a></li>
+                      <li><a href="#">서민금융 1332 서비스</a></li>
+                      <li><a href="#">공시정보 포털</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">신고 및 접수</a>
+                    <ul class="depth03">
+                      <li><a href="#">거래 거절 부당대우 가맹점 신고</a></li>
+                      <li><a href="#">위장가맹점 신고</a></li>
+                      <li><a href="#">신용카드 불법 모집 신고</a></li>
+                      <li><a href="#">기타 민원신고</a></li>
+                      <li><a href="#">신용카드 불법할인 (카드깡)</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">조회서비스</a>
+                    <ul class="depth03">
+                      <li><a href="#">상속인 금융거래 조회</a></li>
+                      <li><a href="#">신용카드 모집인 조회</a></li>
+                      <li><a href="#">대출모집인 통합조회</a></li>
+                      <li><a href="#">제도권 금융기관 조회</a></li>
+                      <li><a href="#">중고차 시세조회</a></li>
+                      <li><a href="#">우수 모집인 조회</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="#">가맹점</a>
+            <div class="sub_area">
+              <div class="inner">
+                <ul class="depth02">
+                  <li>
+                    <a href="#">가맹점안내</a>
+                    <ul class="depth03">
+                      <li><a href="#">가맹점 가입절차</a></li>
+                      <li><a href="#">가맹점 준수사항</a></li>
+                      <li><a href="#">가맹점 분쟁사례</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">가맹점 모집인 등록정보</a></li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">신용카드 단말기 등록제 안내</a>
+                    <ul class="depth03">
+                      <li><a href="#">공지사항</a></li>
+                      <li><a href="#">변경 시험 주요 사례</a></li>
+                      <li><a href="#">협회 직접 등록 주요 사례</a></li>
+                      <li><a href="#">특수 유형 단말기 주요 사례</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">신용카드 단말기 등록정보</a>
+                    <ul class="depth03">
+                      <li><a href="#">신용카드 단말기 등록정보</a></li>
+                      <li><a href="#">사용 연장 신용카드 단말기 등록정보</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">신용카드 단말기 시험접수</a>
+                    <ul class="depth03">
+                      <li><a href="#">시험 신청서 접수</a></li>
+                      <li><a href="#">단말기 등록 신청서 제출</a></li>
+                      <li><a href="#">단말기 등록 신청서 제출<br />(단순 형상 변경)</a></li>
+                      <li><a href="#">단말기 등록 신청서 제출<br />(타 법령상 보안 기준 적용 장치)</a></li>
+                      <li><a href="#">단말기 등록 신청서 제출<br />(국세·지방세 신용카드 납부 자동화기기)</a></li>
+                      <li><a href="#">단말기 등록 신청서 제출<br />(금융혁신지원 특별법에 의한 임시등록)</a></li>
+                      <li><a href="#">인증 마크 사용 신청서 제출</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="#">알림 &middot; 소식</a>
+            <div class="sub_area">
+              <div class="inner">
+                <ul class="depth02">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">보도자료</a></li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li><a href="#">홍보자료</a></li>
+                  <li><a href="#">회원사 채용</a></li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">협회 채용</a>
+                    <ul class="depth03">
+                      <li><a href="#">채용안내</a></li>
+                      <li><a href="#">지원서 작성</a></li>
+                      <li><a href="#">나의 지원서 조회</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="#">정보센터</a>
+            <div class="sub_area">
+              <div class="inner">
+                <ul class="depth02">
+                  <li><a href="#">업권현황</a></li>
+                  <li>
+                    <a href="#">통계</a>
+                    <ul class="depth03">
+                      <li><a href="#">연도별 신용카드 이용실적</a></li>
+                      <li><a href="#">연도별 리스 실적 요약</a></li>
+                      <li><a href="#">연도별 업종별 리스 실행 현황</a></li>
+                      <li><a href="#">연도별 물건별 리스 실행 현황</a></li>
+                      <li><a href="#">연도별 할부금융 취급액 및 실적 잔액</a></li>
+                      <li><a href="#">연도별 신기술금융 투자실적</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li><a href="#">법규 및 규정</a></li>
+                  <li>
+                    <a href="#">규제개선</a>
+                    <ul class="depth03">
+                      <li><a href="#">자율 규제 현황</a></li>
+                      <li><a href="#">건의 신청</a></li>
+                      <li><a href="#">자율 규제 제&middot;개정 공고</a></li>
+                      <li><a href="#">규제심의위원회 심의 결과</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">사업자 대상 렌탈 업적 정성 심의</a>
+                    <ul class="depth03">
+                      <li><a href="#">심의 신청 안내</a></li>
+                      <li><a href="#">심의 결과 공고</a></li>
+                      <li><a href="#">영업개시 사실 확인서 제출 현황 공고</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">시간선택제 일자리</a></li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">여신금융연구소</a>
+                    <ul class="depth03">
+                      <li><a href="#">연구소 소식</a></li>
+                      <li><a href="#">대외기고&middot;인터뷰</a></li>
+                      <li><a href="#">여신금융보고서</a></li>
+                      <li><a href="#">발간자료</a></li>
+                      <li><a href="#">종간(終刊)</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">교육&middot;연수</a>
+                    <ul class="depth03">
+                      <li><a href="#" class="new_window">여신금융교육 연수원</a></li>
+                      <li><a href="#" class="new_window">카드 모집인 교육 시험센터</a></li>
+                      <li><a href="#" class="new_window">대출상담사 교육</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="#">협회 &middot; 회원사</a>
+            <div class="sub_area">
+              <div class="inner">
+                <ul class="depth02">
+                  <li><a href="#">인사말</a></li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">협회안내</a>
+                    <ul class="depth03">
+                      <li><a href="#">협회개요</a></li>
+                      <li><a href="#">정관 및 규정</a></li>
+                      <li><a href="#">조직 및 부서별 현황</a></li>
+                      <li><a href="#">이사회현황</a></li>
+                      <li><a href="#">오시는 길</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">회원사 안내</a>
+                    <ul class="depth03">
+                      <li><a href="#">신용카드사</a></li>
+                      <li><a href="#">리스&middot;금융사</a></li>
+                      <li><a href="#">신기술금융사</a></li>
+                      <li><a href="#">회원가입 안내</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">내부공익신고센터</a>
+                    <ul class="depth03">
+                      <li><a href="#">이용안내</a></li>
+                      <li><a href="#">공익신고</a></li>
+                      <li><a href="#">진행현황</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <a href="#" class="ico_all_menu open">
+          <img src="../../images/common/ico_all_menu_ov.png" alt="전체메뉴 보러가기">
+        </a>
+
+        <a href="#" class="ico_all_menu">
+          <img src="../../images/common/ico_all_menu.png" alt="전체메뉴 보러가기">
+        </a>
+
+      </div>
+      <span class="navBg"></span>
+    </div>
+    <div id="contents">
+      <div class="location_wrap">
+        <ul class="location_inner">
+          <li>
+            <a href="#" title="홈으로 바로가기"><span>HOME</span></a>
+          </li>
+          <li>
+            가맹점
+          </li>
+          <li>
+            신용카드 단말기 등록정보
+          </li>
+          <li>
+            신용카드 단말기 등록정보
+          </li>
+        </ul>
+      </div>
+
+      <div class="title_wrap">
+        <div class="title_inner">
+          <h3>신용카드 단말기 등록정보</h3>
+        </div>
+      </div>
+
+      <div class="list_wrap type2">
+        <div class="sorting_wrap clfix">
+          <a href="#" class="btn_excel">
+            <span class="ico_excel"></span>
+            <p>엑셀 다운로드</p></a>
+          <div class="list_count">
+            <p class="page">*'19.8.31 이전 등록단말기에 대한 시험정보는 없음</p>
+          </div>
+        </div>
+        <div class="list_table_wrap02">
+          <table caption="신용카드 단말기 등록정보 리스트">
+            <colgroup>
+              <col width="80"/>
+              <col width="110"/>
+              <col width="139"/>
+              <col width="232"/>
+              <col width="232"/>
+              <col width="160"/>
+              <col width="130"/>
+              <col width="*"/>
+            </colgroup>
+            <tr>
+              <th>순번</th>
+              <th>단말기종류</th>
+              <th>인증번호</th>
+              <th>단말기식별번호<br />시험기관</th>
+              <th>개발사<br />등록기관</th>
+              <th>모델명<br />버전</th>
+              <th>인증일자<br />만료일자</th>
+              <th>시험구분*</th>
+            </tr>
+            <tr>
+              <td>256</td>
+              <td>CAT</td>
+              <td>2021-051-C1</td>
+              <td class="align_L">
+                ####KIS-14011101<br />
+                한국정보통신기술협회
+              </td>
+              <td class="align_L">
+                광우정보통신(주)<br />
+                KIS정보통신(KIS)
+              </td>
+              <td class="align_L">
+                KIS-1401<br />
+                1101
+              </td>
+              <td>
+                2021.02.05<br />
+                2026.02.04
+              </td>
+              <td>변경시험</td>
+            </tr>
+            <tr>
+              <td>256</td>
+              <td>카드리더기</td>
+              <td>2021-051-C1</td>
+              <td class="align_L">
+                ####KIS-14011101<br />
+                한국정보통신기술협회
+              </td>
+              <td class="align_L">
+                한국신용카드결제(주)<br />
+                한국신용카드결제(KOCES)
+              </td>
+              <td class="align_L">
+                KIS-1401<br />
+                1101
+              </td>
+              <td>
+                2021.02.05<br />
+                2026.02.04
+              </td>
+              <td>변경시험</td>
+            </tr>
+            <tr>
+              <td>256</td>
+              <td>카드리더기</td>
+              <td>2021-051-C1</td>
+              <td class="align_L">
+                ####SHS-440N1001<br />
+                한국기계전기전자시험연구원
+              </td>
+              <td class="align_L">
+                주식회사스마트로<br />
+                스마트로(SMARTRO)
+              </td>
+              <td class="align_L">
+                DUALPAY-636X<br />
+                1101
+              </td>
+              <td>
+                2021.02.05<br />
+                2026.02.04
+              </td>
+              <td>변경시험</td>
+            </tr>
+            <tr>
+              <td>256</td>
+              <td>CAT</td>
+              <td>2021-051-C1</td>
+              <td class="align_L">
+                ####KIS-14011101<br />
+                한국정보통신기술협회
+              </td>
+              <td class="align_L">
+                광우정보통신(주)<br />
+                KIS정보통신(KIS)
+              </td>
+              <td class="align_L">
+                KIS-1401<br />
+                1101
+              </td>
+              <td>
+                2021.02.05<br />
+                2026.02.04
+              </td>
+              <td>변경시험</td>
+            </tr>
+          </table>
+        </div>
+        <div class="num_area_wrap">
+          <div class="num_area">
+            <a href="javascript:void(0);" class="btn_list_first"></a>
+            <a href="javascript:void(0);" class="btn_list_prev"></a>
+            <ul>
+              <li class="on"><a href="" title="페이지 이동">1</a></li>
+              <li><a href="" title="페이지 이동">2</a></li>
+              <li><a href="" title="페이지 이동">3</a></li>
+              <li><a href="" title="페이지 이동">4</a></li>
+              <li><a href="" title="페이지 이동">5</a></li>
+              <li><a href="" title="페이지 이동">6</a></li>
+              <li><a href="" title="페이지 이동">7</a></li>
+              <li><a href="" title="페이지 이동">8</a></li>
+              <li><a href="" title="페이지 이동">9</a></li>
+              <li><a href="" title="페이지 이동">10</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="btn_list_next"></a>
+            <a href="javascript:void(0);" class="btn_list_last"></a>
+          </div>
+        </div>
+        <div class="search_area_wrap">
+          <div class="search_inner">
+            <select class="search_select" name="" title="시험구분 분류 선택">
+              <option value="">시험구분</option>
+              <option value="">시험구분</option>
+            </select>
+            <select class="search_select ma_L8" name="" title="조건검색 분류 선택">
+              <option value="">조건검색</option>
+              <option value="">조건검색</option>
+            </select>
+            <div class="search_text">
+              <input type="text" name="" value="" placeholder="검색어를 입력해 주세요." title="검색어를 입력해 주세요.">
+              <a href="#" class="btn_search"><span>검색버튼</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="business_wrap">
+        <ul class="business_list">
+          <li>
+            <button>관련사이트 <span class="arrow"></span></button>
+            <div class="sub_cont">
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">여신금융포럼</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">소비자금융협회</a>
+                </li>
+              </ul>
+              <ul>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button>신용카드 <span class="arrow"></span></button>
+            <div class="sub_cont">
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">롯데카드</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">비씨카드</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">신한카드</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">삼성카드</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">우리카드</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">하나카드</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">현대카드</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">KB국민카드</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button>리스 &middot; 할부금융사 <span class="arrow"></span></button>
+            <div class="sub_cont">
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">데라게란덴</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">도이치파이낸셜</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">롯데오토리스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">롯데캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">메르세데스벤츠파이낸셜서비스코리아</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">메리츠캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">메이슨캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">무림캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">볼보파이낸셜서비스코리아</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">산은캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">JB우리캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">RCI파이낸셜서비스코리아</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">스카니아파이낸스코리아</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">스타파이낸셜서비시스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">신한캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">아주캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">애큐온캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">에코캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">엠파크캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">오릭스캐피탈코리아</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">오케이캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">웰릭스캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">JT캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">SPC캐피탈</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">제이엠캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">중도파이넨스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">케이카캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">코스모캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">토요타파이낸셜</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">폭스바겐파이낸셜서비스코리아</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">하나캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">하이델베르그</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">한국자산캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">한국캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">KB캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">SY오토캐피탈</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">한국투자캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">현대캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">현대커머셜</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">홈앤캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">효성캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">AJ캐피탈파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">BMW파이낸셜</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">BNK캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">DB캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">DGB캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">NH농협캐피탈</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button>신기술금융사 <span class="arrow"></span></button>
+            <div class="sub_cont">
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">나우아이비캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">나이스투자파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">농심캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">동유기술투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">디에이밸류인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">레이크우드파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">롯데액셀러레이터</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">리더스기술투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">메가인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">미래에셋캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">미래에쿼티파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">벡터기술투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">브이에스인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">삼성벤처투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">솔론인베스트</a>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">시너지아이비투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">씨티케이인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">아르케인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">아주아이비투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">액시스인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">얼머스인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">에스더블유인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">에스티캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">에이스투자금융</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">엔베스터</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">엔코어벤처스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">오비트파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">우리기술투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">위드윈인베스트먼트</a>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">유비쿼스인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">유일기술투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">이스트게이트인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">이앤인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">인탑스인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">제니타스인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">지엠비인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">케이디인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">케이클라비스인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">케이티인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">코나아이파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">코너스톤투자파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">코리아오메가투자금융</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">큐캐피탈파트너스</a>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">키움캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">킹고투자파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">토니인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">티그리스인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">펄어비스캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">포스코기술투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">프렌드투자파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">하나벤처스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">하랑기술투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">한빛인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">현대투자파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">IBK캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">NH벤처투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">YG인베스트먼트</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer_info">
+          <div class="footer_link">
+            <ul>
+              <li>
+                <a href="#"><span>HOME</span></a>
+              </li>
+              <li>
+                <a href="#">개인정보처리방침</a>
+              </li>
+              <li>
+                <a href="#">오시는길</a>
+              </li>
+              <li>
+                <a href="#">사이트맵</a>
+              </li>
+              <li>
+                <a href="#"><span class="eng">ENGLISH</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <p>서울특별시 중구 다동길 43 (다동70번지) 한외빌딩13층 여신금융협회 (04521) <span>대표전화 02-2011-0700</span></p>
+            <p>COPYRIGHT © THE CREDIT FINANCE ASSOCIATION ALL RIGHTS RESERVED</p>
+          </div>
+          <div class="footer_logo">
+            <a href="#">
+              <img src="../../images/common/footer_logo.png" alt="여신금융협회">
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+				$('#visual').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+					autoplay:true,
+					autoplaySpeed:2000,
+					speed: 500,
+					pauseOnFocus:false,
+					pauseOnHover:false,
+					pauseOnDotsHover:true,
+					touchMove:false,
+					infinite: true,
+					arrows: false,
+					dots: true,
+          fade: true,
+          accessibility: true,
+        });
+
+        $('#bottom_slide').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+					autoplay:true,
+					autoplaySpeed:3000,
+					speed: 700,
+					pauseOnFocus:false,
+					pauseOnHover:false,
+					pauseOnDotsHover:true,
+					touchMove:false,
+					infinite: true,
+					arrows: false,
+					dots: true,
+          fade: true,
+          accessibility: true,
+        });
+
+        $('#relate_slide').slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+					autoplay:false,
+					speed: 700,
+					pauseOnFocus:false,
+					pauseOnHover:false,
+					pauseOnDotsHover:true,
+					touchMove:false,
+					infinite: false,
+					arrows: true,
+					dots: false,
+          fade: false,
+          accessibility: true,
+        });
+  </script>
+</body>
+</html>
