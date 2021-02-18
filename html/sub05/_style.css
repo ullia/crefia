@@ -251,6 +251,49 @@
   color:#fff;
 }
 
+.three_tap_wrap{
+  width: 100%;
+  position: relative;
+}
+
+.three_tap_wrap ul{
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.three_tap_wrap ul li{
+  width: 400px;
+  height: 65px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left:  1px solid #ddd;
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-block;
+}
+
+.three_tap_wrap ul li:last-child{
+  border-right:  1px solid #ddd;
+}
+
+.three_tap_wrap ul li a{
+  font: 400 20px/65px 'NanumSquare';
+  color:#666;
+  text-align: center;
+  display: block;
+}
+
+.three_tap_wrap ul li.on{
+  background-color: #0b4fa1;
+  border: 1px solid #0b4fa1;
+}
+
+.three_tap_wrap ul li.on a{
+  font: 700 20px/65px 'NanumSquare';
+  color:#fff;
+}
+
 .tap_cont_wrap{
   width: 100%;
   position: relative;
@@ -343,6 +386,108 @@
   margin: 22px 7px 0;
 }
 
+.tap_cont_inner .layout_box_wrap01{
+  margin: 60px auto 120px;
+}
+
+.tap_cont_inner .layout_box_wrap01 .layout_box_inner{
+  border-top: 1px solid #222;
+  font-size: 0;
+}
+
+.tap_cont_inner .layout_box_wrap01 .title_box{
+  display: inline-block;
+  width: 220px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  vertical-align: top;
+  height: 336px;
+  position: relative;
+}
+
+.tap_cont_inner .layout_box_wrap01 .title_box.list2{
+  height: 112px;
+}
+
+.tap_cont_inner .layout_box_wrap01 .title_box.list3{
+  height: 168px;
+}
+
+.tap_cont_inner .layout_box_wrap01 .title_box.list5{
+  height: 280px;
+}
+
+.tap_cont_inner .layout_box_wrap01 .title_box h5{
+  font: 700 16px/24px 'Montserrat','Noto Sans KR';
+  text-align: center;
+  vertical-align: middle;
+  color:#222;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+}
+
+.tap_cont_inner .layout_box_wrap01 .list_box{
+  display: inline-block;
+  width: 980px;
+}
+
+.tap_cont_inner .layout_box_wrap01 .list_box li{
+  border-left: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  height: 56px;
+  box-sizing: border-box;
+  font-size: 0;
+}
+
+.tap_cont_inner .layout_box_wrap01 .list_box li:hover{
+  background-color: #f8f8f8;
+}
+
+.tap_cont_inner .layout_box_wrap01 .list_box li p{
+  font: 400 16px/56px 'Montserrat','Noto Sans KR';
+  text-align: left;
+  color:#222;
+  padding-left: 20px;
+  display: inline-block;
+  width: 797px;
+  box-sizing: border-box;
+}
+
+.tap_cont_inner .layout_box_wrap01 .list_box li a{
+  width: 182px;
+  height: 56px;
+  display: inline-block;
+  border-left: 1px solid #e5e5e5;
+  text-align: center;
+  font: 400 16px/56px 'Montserrat','Noto Sans KR';
+  color:#222;
+  box-sizing: border-box;
+}
+
+.tap_cont_inner .layout_box_wrap01 .list_box li a:hover{
+  font: 500 16px/56px 'Montserrat','Noto Sans KR';
+  color: #0b4fa1;
+}
+
+.tap_cont_inner .layout_box_wrap01 .list_box li a::after{
+  content: '';
+  width: 5px;
+  height: 8px;
+  background: url('../../images/common/sprite.png')no-repeat -25px -145px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 23px;
+  margin-left: 14px;
+}
+
+.tap_cont_inner .layout_box_wrap01 .list_box li a:hover::after{
+  background: url('../../images/common/sprite.png')no-repeat -32px -145px;
+}
+
 .desc_wrap{
   position: relative;
 }
@@ -351,6 +496,7 @@
   display: inline-block;
 }
 
+
 /*****
 *
 * sub05
@@ -358,11 +504,12 @@
 *****/
 
 /* 협회회원사 > 인사말 */
-.greeting_visual_wrap{
+.greeting_visual_wrap {
   position: relative;
   height: 540px;
 }
-.greeting_visual_wrap > img{
+
+.greeting_visual_wrap>img {
   display: block;
   width: 1920px;
   position: absolute;
@@ -371,6 +518,7 @@
   margin-left: -960px;
   z-index: 1;
 }
+
 .greeting_visual_wrap .greeting_inner {
   width: 1200px;
   position: absolute;
@@ -380,14 +528,17 @@
   margin-left: -600px;
   z-index: 1;
 }
-.greeting_visual_wrap .greeting_inner > *{
-  font-family:'Montserrat','Noto Sans KR';
-  color:#222222;
+
+.greeting_visual_wrap .greeting_inner>* {
+  font-family: 'Montserrat', 'Noto Sans KR';
+  color: #222222;
 }
+
 .greeting_visual_wrap .greeting_inner h3 {
   font-size: 46px;
   line-height: 46px;
 }
+
 .greeting_visual_wrap .greeting_inner h4 {
   padding: 50px 0 45px;
   font-family: 'NanumSquare';
@@ -396,32 +547,191 @@
   line-height: 38px;
   letter-spacing: -1px;
 }
+
 .greeting_visual_wrap .greeting_inner h5 {
   font-weight: 400;
   font-size: 15px;
 }
+
 .greeting_visual_wrap .greeting_inner span {
   display: block;
   padding-top: 15px;
 }
-.greeting_text_wrap{
+
+.greeting_text_wrap {
   background: #f8f8f8;
 }
+
 .greeting_text_wrap .greeting_inner {
   width: 1200px;
   margin: 0 auto;
   padding: 75px 0;
 }
-.greeting_text_wrap .greeting_inner p.greeting_title{
+
+.greeting_text_wrap .greeting_inner p.greeting_title {
   font: 500 24px/24px 'NanumSquare';
   color: #0c4da2;
 }
-.greeting_text_wrap .greeting_inner p.greeting_desc{
+
+.greeting_text_wrap .greeting_inner p.greeting_desc {
   padding: 30px 0 45px;
   font: 400 16px/24px 'Noto Sans KR';
   color: #444444;
 }
-.greeting_text_wrap .greeting_inner p:last-child{
+
+.greeting_text_wrap .greeting_inner p:last-child {
   padding-bottom: 0;
 }
+
 /* // 협회회원사 > 인사말 */
+
+/* 협회회원사 > 협회개요 */
+.banner_wrap {
+  margin-top: 80px;
+}
+
+.banner_wrap .banner_inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.banner_wrap .banner_inner img {
+  display: block;
+  width: 100%;
+}
+
+.establishment_wrap{
+  margin-top: 32px;
+}
+.establishment_wrap .establishment_inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+.establishment_wrap .establishment_inner {
+  
+}
+.establishment_wrap .establishment_inner li {
+  float: left;
+  width: 586px;
+}
+.establishment_wrap .establishment_inner li:first-child {
+  margin-right: 28px;
+}
+.establishment_wrap .establishment_inner li h4 {
+  font: 500 24px/24px 'NanumSquare';
+  color: #222222;
+}
+.establishment_wrap .establishment_inner li > div{
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  height: 140px;
+  border: 1px solid #dddddd;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.establishment_wrap .establishment_inner li > div > *{
+  position: absolute;
+}
+.establishment_wrap .establishment_inner li > div > img{
+  top: 25px;
+  left: 60px;
+}
+.establishment_wrap .establishment_inner li > div > p{
+  top: 50%;
+  left: 200px;
+  transform: translateY(-50%);
+  font: 400 16px/24px 'Noto Sans KR';
+  color: #555555;
+}
+
+.content_title_wrap {
+  margin-top: 75px;
+}
+.content_title_wrap .content_title_inner {
+  width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid #666666;
+}
+.content_title_wrap .content_title_inner h4{
+  font: 600 28px/38px 'NanumSquare';
+  color: #222222;
+}
+
+.history_wrap {
+  padding-bottom: 70px;
+}
+.history_wrap .history_inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+.history_wrap .history_inner .history_section {
+  padding: 45px 0 40px;
+  border-bottom: 2px dotted #ccc;
+}
+.history_wrap .history_inner .history_section.last {
+  border: 0 none;
+}
+.history_wrap .history_inner .history_section .sect_left {
+  float: left;
+  width: 280px;
+  font: 600 40px/40px 'Montserrat', 'Noto Sans KR';
+  color: #222222;
+}
+.history_wrap .history_inner .history_section .sect_left span{
+  font-weight: normal;
+}
+.history_wrap .history_inner .history_section .sect_right {
+  position: relative;
+  float: left;
+}
+.history_wrap .history_inner .history_section .sect_right::before{
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: auto;
+  position: absolute;
+  top: 70px;
+  left: 150px;
+  background: #ccc;
+  z-index: -1; 
+}
+.history_wrap .history_inner .history_section.sect3 .sect_right::before{height: 110px}
+.history_wrap .history_inner .history_section.sect2 .sect_right::before{height: 820px}
+.history_wrap .history_inner .history_section.sect1 .sect_right::before{height: 940px}
+
+.history_wrap .history_inner .history_section .sect_right .year_modules {
+  padding-bottom: 15px;
+}
+.history_wrap .history_inner .history_section .sect_right .year_modules.last {
+  padding: 0;
+}
+.history_wrap .history_inner .history_section .sect_right .year_modules h5 {
+  display: block;
+  padding-bottom: 20px;
+  font: 600 28px/38px 'Montserrat';
+  color: #222222;
+}
+.history_wrap .history_inner .history_section .sect_right .year_modules ul {}
+.history_wrap .history_inner .history_section .sect_right .year_modules ul li {
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+.history_wrap .history_inner .history_section .sect_right .year_modules ul li > * {
+  display: inline-block;
+  float: left;
+}
+.history_wrap .history_inner .history_section .sect_right .year_modules ul li p.date {
+  width: 100px;
+  font: 600 16px 'Montserrat', 'Noto Sans KR';
+  color: #222222;
+}
+.history_wrap .history_inner .history_section .sect_right .year_modules ul li p.desc {
+  font-family: 'Montserrat','Noto Sans KR';
+  color: #555555;
+}
+.history_wrap .history_inner .history_section .sect_right .year_modules ul li span {
+  width: 100px;
+  text-align: center;
+}

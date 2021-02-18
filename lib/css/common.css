@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 html{
 	font-size: 15px;
 	text-rendering: geometricPrecision;
+	height: 100%;
 }
 
 div, p, ol, ul, li, img, a, h1, h2, h3, h4, h5, h6, form, span, iframe, dl, dt, dd {margin:0;padding:0;}
@@ -39,6 +40,7 @@ body {
 	vertical-align: baseline;
 	min-width: 1263px;
 	overflow: auto;
+	height: 100%;
 }
 
 a:active{
@@ -224,6 +226,88 @@ table td .ico_download span{
 	visibility: hidden;
 	opacity: 0;
 	text-indent: -9999px;
+}
+
+.data_table_wrap{
+  width: 100%;
+  position: relative;
+}
+
+.data_table_wrap table{
+  width: 1200px;
+  margin: 0 auto;
+  table-layout: fixed;
+  border-collapse: separate;
+}
+
+.data_table_wrap table th{
+	border-right: 1px solid #e5e5e5;
+}
+
+.data_table_wrap table th.bdn{
+	border-right: none;
+}
+
+.data_table_wrap table td{
+	font:400 16px/56px 'Montserrat','Noto Sans KR';
+	color:#222;
+	border-right: 1px solid #e5e5e5;
+	padding: 0 20px;
+}
+
+.data_table_wrap table td:last-child{
+	border-right: none;
+}
+
+.data_table_wrap table td.bold{
+	font:700 16px/56px 'Montserrat','Noto Sans KR';
+	color:#222;
+}
+
+.data_table_wrap table tr:hover td{
+	background-color: #fff;
+}
+
+.data_table_wrap table tr.on td{
+	background-color: #fff;
+}
+
+.common_note{
+	width: 1200px;
+	margin: 30px auto 120px;
+	background-color: #f8f8f8;
+	border: 1px solid #e5e5e5;
+	box-sizing: border-box;
+	padding: 30px 20px;
+}
+
+.common_note li{
+	display: block;
+	margin-bottom: 7px;
+	font-size: 0;
+}
+
+.common_note li:last-child{
+	margin-bottom: 0;
+}
+
+.common_note li p{
+	font:300 15px/22px 'Montserrat','Noto Sans KR';
+	color:#555;
+	text-align: left;
+	display: inline-block;
+	width: 1130px;
+}
+
+.common_note li::before{
+	content: '';
+	width: 3px;
+	height: 3px;
+	background-color: #f38411;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 15px;
+	margin-top: 8px;
 }
 
 .num_area_wrap{
