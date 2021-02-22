@@ -502,8 +502,17 @@
 * sub05
 *
 *****/
+#contents{
+  padding-bottom: 120px;
+}
+div[class*='_inner']{
+  width: 1200px;
+  margin: 0 auto;
+}
 
-/* 협회회원사 > 인사말 */
+/* 
+협회회원사 > 인사말 
+*/
 .greeting_visual_wrap {
   position: relative;
   height: 540px;
@@ -583,9 +592,13 @@
   padding-bottom: 0;
 }
 
-/* // 협회회원사 > 인사말 */
+/* 
+// 협회회원사 > 인사말 
+*/
 
-/* 협회회원사 > 협회개요 */
+/* 
+협회회원사 > 협회개요 > 연혁 
+*/
 .banner_wrap {
   margin-top: 80px;
 }
@@ -593,6 +606,11 @@
 .banner_wrap .banner_inner {
   width: 1200px;
   margin: 0 auto;
+}
+.banner_wrap .banner_inner h4{
+  font: 600 28px/28px 'NanumSquare';
+  color: #222222;
+  padding-bottom: 15px;
 }
 
 .banner_wrap .banner_inner img {
@@ -655,17 +673,13 @@
   border-bottom: 1px solid #666666;
 }
 .content_title_wrap .content_title_inner h4{
-  font: 600 28px/38px 'NanumSquare';
+  padding-bottom: 15px;
+  font: 600 28px/28px 'NanumSquare';
   color: #222222;
 }
 
-.history_wrap {
-  padding-bottom: 70px;
-}
-.history_wrap .history_inner {
-  width: 1200px;
-  margin: 0 auto;
-}
+.history_wrap {}
+.history_wrap .history_inner {}
 .history_wrap .history_inner .history_section {
   padding: 45px 0 40px;
   border-bottom: 2px dotted #ccc;
@@ -693,7 +707,7 @@
   height: auto;
   position: absolute;
   top: 70px;
-  left: 150px;
+  left: 149px;
   background: #ccc;
   z-index: -1; 
 }
@@ -735,3 +749,137 @@
   width: 100px;
   text-align: center;
 }
+/* 
+// 협회회원사 > 협회개요 > 연혁 
+*/
+
+/* 
+협회회원사 > 협회개요 > 미션 및 비전 
+*/
+.vision_wrap{}
+.vision_wrap .vision_inner{
+  padding: 50px 0 70px;
+}
+.vision_wrap .vision_inner p{
+  font: 600 24px/24px 'NanumSquare';
+  color: #222222;
+}
+.vision_wrap .vision_inner h5{
+  padding-top: 20px;
+  font: 600 44px/44px 'NanumSquare';
+  color: #222222
+}
+.strategy_wrap{
+  background:#f1f5f8;
+}
+.strategy_inner{
+  padding: 65px 0 50px;
+}
+.strategy_wrap .strategy_purpose{}
+.strategy_wrap .strategy_purpose h4{
+  font: 600 28px/28px 'NanumSquare';
+  color: #222222;
+}
+.strategy_wrap .strategy_purpose ul{
+  margin-top: 40px;
+}
+.strategy_wrap .strategy_purpose ul li{
+  float: left;
+}
+.strategy_wrap .strategy_purpose ul li img{
+  display: block;
+}
+.strategy_wrap .strategy_problem {
+  margin-top: 80px;
+}
+.strategy_wrap .strategy_problem > div{
+  float: left;
+}
+.strategy_wrap .strategy_problem div.strategy_problem_img{
+  width: 412px;
+}
+.strategy_wrap .strategy_problem div.strategy_problem_img img{
+  display: block;
+}
+.strategy_wrap .strategy_problem div.strategy_problem_info{
+  margin-left: 100px;
+  width: 670px;
+}
+.strategy_wrap .strategy_problem div.strategy_problem_info h4{
+  font: 600 28px/28px 'NanumSquare';
+  color: #222222;
+}
+.strategy_wrap .strategy_problem div.strategy_problem_info ul{
+  margin-top: 15px;
+  border-top: 1px solid #666666;
+}
+.strategy_wrap .strategy_problem div.strategy_problem_info ul li{
+  display: block;
+  border-bottom: 1px dashed #c4c4c4;
+}
+.strategy_wrap .strategy_problem div.strategy_problem_info ul li:last-child{
+  border: 0 none;
+}
+.strategy_wrap .strategy_problem div.strategy_problem_info ul li p{
+  font: 400 16px 'Montserrat','Noto Sans KR';
+  color: #444444;
+  line-height: 100px;
+}
+.strategy_wrap .strategy_problem div.strategy_problem_info ul li p strong{
+  display: inline-block;
+  width: 75px;
+  font: 600 18px 'NanumSquare';
+  color: #222222;
+}
+
+/* 
+// 협회회원사 > 협회개요 > 미션 및 비전 
+*/
+
+/* 
+협회회원사 > 협회개요 > CI소개
+*/
+.ci_info_wrap{}
+.ci_info_wrap .ci_info_inner{
+  padding-top: 50px;
+}
+.ci_info_wrap p{
+  font: 400 16px/28px 'Montserrat','Noto Sans KR';
+  color: #555555;
+}
+.ci_info_wrap img{
+  margin-top: 35px;
+  display: block;
+}
+.ci_signature_wrap{
+  margin-top: 75px;
+}
+.ci_signature_wrap .ci_signature_inner{}
+.ci_signature_wrap .ci_signature_desc{}
+.ci_signature_wrap .ci_signature_desc h4{
+  font: 600 24px/24px 'Montserrat','Noto Sans KR';
+  color: #222222;
+}
+.ci_signature_wrap .ci_signature_desc p{
+  padding: 25px 0 35px;
+  font: 400 16px/28px 'Montserrat','Noto Sans KR';
+  color: #555555;
+}
+.ci_signature_wrap .ci_signature_img{}
+.ci_signature_wrap .ci_signature_img ul{
+  float: left;
+  margin-right: 28px;
+}
+.ci_signature_wrap .ci_signature_img ul:last-child{
+  margin-right: 0;
+}
+.ci_signature_wrap .ci_signature_img ul li{
+  display: block;
+  margin-bottom: 28px;
+}
+.ci_signature_wrap .ci_signature_img ul li img{
+  display: block;
+}
+/* 
+// 협회회원사 > 협회개요 > CI소개
+*/
