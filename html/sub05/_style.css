@@ -509,6 +509,15 @@ div[class*='_inner']{
   width: 1200px;
   margin: 0 auto;
 }
+.hidden{
+  position:absolute !important;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  clip:rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip:rect(1px, 1px, 1px, 1px);
+}
 
 /* 
 협회회원사 > 인사말 
@@ -882,4 +891,155 @@ div[class*='_inner']{
 }
 /* 
 // 협회회원사 > 협회개요 > CI소개
+*/
+
+/* 
+협회회원사 > 정관 및 규정
+*/
+.aoa_wrap{
+  margin-top: 10px;
+}
+.aoa_wrap .aoa_article {
+  padding: 40px 0;
+  border-bottom: 1px dashed #c2c2c2;
+}
+.aoa_wrap .aoa_article:last-child {
+  border: 0 none;
+  padding-bottom: 0;
+}
+.aoa_wrap .aoa_article > *{
+  float: left;
+}
+.aoa_wrap .aoa_article h5{
+  position: relative;
+  padding-left: 16px;
+  display: inline-block;
+  width: 270px;
+  font: 600 24px/36px 'NanumSquare';
+  color: #0c4fa0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.aoa_wrap .aoa_article h5::before{
+  content:'';
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  background: url('../../images/sub05/bullet_blue.png') center center no-repeat;
+}
+.aoa_wrap .aoa_article ul {
+  width: 930px;
+}
+.aoa_wrap .aoa_article ul.nodesc li{
+  padding-bottom: 10px;
+}
+.aoa_wrap .aoa_article ul.nodesc li:last-child {
+  padding-bottom: 0;
+}
+.aoa_wrap .aoa_article ul.additionalrules li{
+  padding-left: 16px;
+  padding-bottom: 20px;
+}
+.aoa_wrap .aoa_article ul.additionalrules li:last-child {
+  padding-bottom: 0;
+}
+.aoa_wrap .aoa_article ul li{}
+.aoa_wrap .aoa_article ul li p{
+  position: relative;
+  font: 400 16px/26px 'Noto Sans KR';
+  color: #555555;
+  letter-spacing: -1px;
+}
+.aoa_wrap .aoa_article ul li p span{
+  display: inline-block;
+  width: 16px;
+  height: 1px;
+}
+.aoa_wrap .aoa_article ul li p.bul {
+  padding-left: 14px;
+}
+.aoa_wrap .aoa_article ul li p.bul::before{
+  content:'';
+  display: inline-block;
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  background: url('../../images/sub05/bullet_gray.png') center center no-repeat;
+}
+.aoa_wrap .aoa_article ul li p.title {
+  font-weight: 500;
+  color: #222222;
+}
+.aoa_wrap .aoa_article ul li p.desc {
+  padding-top: 10px;
+  padding-left: 14px;
+  padding-bottom: 25px;
+}
+.aoa_wrap .aoa_article ul li p.last {
+  padding-bottom: 0;
+}
+.aoa_wrap .aoa_article.tableform {}
+.aoa_wrap .aoa_article.tableform h5 {
+  width: 100%;
+}
+.aoa_wrap .aoa_article.tableform h5 span{
+  font: 400 16px/36px 'Noto Sans KR';
+  color: #555555;
+  float: right;
+}
+.aoa_wrap .aoa_article.tableform .data_table_wrap {
+  margin-top: 20px;
+}
+.aoa_wrap .aoa_article.tableform table{
+  width: 100%;
+}
+.aoa_wrap .aoa_article.tableform table th.twolines {
+  line-height: inherit;
+}
+.aoa_wrap .aoa_article.tableform table td span.tdmark {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  vertical-align: middle;
+  text-indent: -9999px;
+}
+.aoa_wrap .aoa_article.tableform table td span.tdmark.mark_01 {background: url('../../images/sub05/mark_01.jpg') no-repeat;}
+.aoa_wrap .aoa_article.tableform table td span.tdmark.mark_02 {background: url('../../images/sub05/mark_02.jpg') no-repeat;}
+.aoa_wrap .aoa_article.tableform table td span.tdmark.mark_03 {background: url('../../images/sub05/mark_03.jpg') no-repeat;}
+.aoa_wrap .aoa_article .aoa_table_notice{
+  margin-top: 30px;
+  padding: 25px 20px;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  background: #f8f8f8;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.aoa_wrap .aoa_article .aoa_table_notice ul{}
+.aoa_wrap .aoa_article .aoa_table_notice ul li{
+  display: block;
+}
+.aoa_wrap .aoa_article .aoa_table_notice ul li p{
+  padding-left: 20px;
+  font: 400 15px/30px 'Noto Sans KR';
+  color: #555555;
+  letter-spacing: 0;
+}
+.aoa_wrap .aoa_article .aoa_table_notice ul li p:before{
+  content:'';
+  display: inline-block;
+  position: absolute;
+  top: 14px;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  background: url('../../images/sub05/bullet_orange.png') center center no-repeat;
+}
+/* 
+// 협회회원사 > 정관 및 규정
 */
