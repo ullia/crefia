@@ -1,0 +1,1962 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>여신금융협회</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+
+  <link rel="stylesheet" type="text/css" href="../../lib/css/common.css"/>
+  <!-- <link rel="stylesheet" type="text/css" href="../../lib/css/style.css"/> -->
+  <link rel="stylesheet" type="text/css" href="_style.css"/>
+  <script type="text/javascript" src="../../lib/js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="../../lib/js/slick.min.js"></script>
+  <script type="text/javascript" src="../../lib/js/common.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../lib/css/slick.css" />
+
+</head>
+<body>
+  <div id="accessibility">
+  	<a href="#contents">본문 바로가기</a>
+  	<a href="#header-gnb">주요메뉴 바로가기</a>
+  </div>
+  <div id="wrap">
+    <div id="header" class="scroll">
+      <h1 class="logo">
+        <a href="/"><img src="../../images/common/top_logo.png" alt="여신금융협회"></a>
+      </h1>
+      <h1 class="logo open">
+        <a href="/"><img src="../../images/common/top_logo_ov.png" alt="여신금융협회"></a>
+      </h1>
+      <div class="gnb" id="header-gnb">
+        <ul class="depth01">
+          <li>
+            <a href="#">소비자 지원</a>
+            <div class="sub_area">
+              <div class="inner">
+                <ul class="depth02">
+                  <li>
+                    <a href="#">소비자 정보</a>
+                    <ul class="depth03">
+                      <li><a href="#">신용카드 관련 FAQ</a></li>
+                      <li><a href="#">신용카드 이용자 가이드</a></li>
+                      <li><a href="#">카드 분실 일괄신고 서비스</a></li>
+                      <li><a href="#">불법 금융 피해 예방 및 대처방안</a></li>
+                      <li><a href="#">서민금융 1332 서비스</a></li>
+                      <li><a href="#">공시정보 포털</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">신고 및 접수</a>
+                    <ul class="depth03">
+                      <li><a href="#">거래 거절 부당대우 가맹점 신고</a></li>
+                      <li><a href="#">위장가맹점 신고</a></li>
+                      <li><a href="#">신용카드 불법 모집 신고</a></li>
+                      <li><a href="#">기타 민원신고</a></li>
+                      <li><a href="#">신용카드 불법할인 (카드깡)</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">조회서비스</a>
+                    <ul class="depth03">
+                      <li><a href="#">상속인 금융거래 조회</a></li>
+                      <li><a href="#">신용카드 모집인 조회</a></li>
+                      <li><a href="#">대출모집인 통합조회</a></li>
+                      <li><a href="#">제도권 금융기관 조회</a></li>
+                      <li><a href="#">중고차 시세조회</a></li>
+                      <li><a href="#">우수 모집인 조회</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="#">가맹점</a>
+            <div class="sub_area">
+              <div class="inner">
+                <ul class="depth02">
+                  <li>
+                    <a href="#">가맹점안내</a>
+                    <ul class="depth03">
+                      <li><a href="#">가맹점 가입절차</a></li>
+                      <li><a href="#">가맹점 준수사항</a></li>
+                      <li><a href="#">가맹점 분쟁사례</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">가맹점 모집인 등록정보</a></li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">신용카드 단말기 등록제 안내</a>
+                    <ul class="depth03">
+                      <li><a href="#">공지사항</a></li>
+                      <li><a href="#">변경 시험 주요 사례</a></li>
+                      <li><a href="#">협회 직접 등록 주요 사례</a></li>
+                      <li><a href="#">특수 유형 단말기 주요 사례</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">신용카드 단말기 등록정보</a>
+                    <ul class="depth03">
+                      <li><a href="#">신용카드 단말기 등록정보</a></li>
+                      <li><a href="#">사용 연장 신용카드 단말기 등록정보</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">신용카드 단말기 시험접수</a>
+                    <ul class="depth03">
+                      <li><a href="#">시험 신청서 접수</a></li>
+                      <li><a href="#">단말기 등록 신청서 제출</a></li>
+                      <li><a href="#">단말기 등록 신청서 제출<br />(단순 형상 변경)</a></li>
+                      <li><a href="#">단말기 등록 신청서 제출<br />(타 법령상 보안 기준 적용 장치)</a></li>
+                      <li><a href="#">단말기 등록 신청서 제출<br />(국세·지방세 신용카드 납부 자동화기기)</a></li>
+                      <li><a href="#">단말기 등록 신청서 제출<br />(금융혁신지원 특별법에 의한 임시등록)</a></li>
+                      <li><a href="#">인증 마크 사용 신청서 제출</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="#">알림 &middot; 소식</a>
+            <div class="sub_area">
+              <div class="inner">
+                <ul class="depth02">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">보도자료</a></li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li><a href="#">홍보자료</a></li>
+                  <li><a href="#">회원사 채용</a></li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">협회 채용</a>
+                    <ul class="depth03">
+                      <li><a href="#">채용안내</a></li>
+                      <li><a href="#">지원서 작성</a></li>
+                      <li><a href="#">나의 지원서 조회</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="#">정보센터</a>
+            <div class="sub_area">
+              <div class="inner">
+                <ul class="depth02">
+                  <li><a href="#">업권현황</a></li>
+                  <li>
+                    <a href="#">통계</a>
+                    <ul class="depth03">
+                      <li><a href="#">연도별 신용카드 이용실적</a></li>
+                      <li><a href="#">연도별 리스 실적 요약</a></li>
+                      <li><a href="#">연도별 업종별 리스 실행 현황</a></li>
+                      <li><a href="#">연도별 물건별 리스 실행 현황</a></li>
+                      <li><a href="#">연도별 할부금융 취급액 및 실적 잔액</a></li>
+                      <li><a href="#">연도별 신기술금융 투자실적</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li><a href="#">법규 및 규정</a></li>
+                  <li>
+                    <a href="#">규제개선</a>
+                    <ul class="depth03">
+                      <li><a href="#">자율 규제 현황</a></li>
+                      <li><a href="#">건의 신청</a></li>
+                      <li><a href="#">자율 규제 제&middot;개정 공고</a></li>
+                      <li><a href="#">규제심의위원회 심의 결과</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">사업자 대상 렌탈 업적 정성 심의</a>
+                    <ul class="depth03">
+                      <li><a href="#">심의 신청 안내</a></li>
+                      <li><a href="#">심의 결과 공고</a></li>
+                      <li><a href="#">영업개시 사실 확인서 제출 현황 공고</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">시간선택제 일자리</a></li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">여신금융연구소</a>
+                    <ul class="depth03">
+                      <li><a href="#">연구소 소식</a></li>
+                      <li><a href="#">대외기고&middot;인터뷰</a></li>
+                      <li><a href="#">여신금융보고서</a></li>
+                      <li><a href="#">발간자료</a></li>
+                      <li><a href="#">종간(終刊)</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">교육&middot;연수</a>
+                    <ul class="depth03">
+                      <li><a href="#" class="new_window">여신금융교육 연수원</a></li>
+                      <li><a href="#" class="new_window">카드 모집인 교육 시험센터</a></li>
+                      <li><a href="#" class="new_window">대출상담사 교육</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="#">협회 &middot; 회원사</a>
+            <div class="sub_area">
+              <div class="inner">
+                <ul class="depth02">
+                  <li><a href="#">인사말</a></li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">협회안내</a>
+                    <ul class="depth03">
+                      <li><a href="#">협회개요</a></li>
+                      <li><a href="#">정관 및 규정</a></li>
+                      <li><a href="#">조직 및 부서별 현황</a></li>
+                      <li><a href="#">이사회현황</a></li>
+                      <li><a href="#">오시는 길</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">회원사 안내</a>
+                    <ul class="depth03">
+                      <li><a href="#">신용카드사</a></li>
+                      <li><a href="#">리스&middot;금융사</a></li>
+                      <li><a href="#">신기술금융사</a></li>
+                      <li><a href="#">회원가입 안내</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <span class="v_line"></span>
+                <ul class="depth02">
+                  <li>
+                    <a href="#">내부공익신고센터</a>
+                    <ul class="depth03">
+                      <li><a href="#">이용안내</a></li>
+                      <li><a href="#">공익신고</a></li>
+                      <li><a href="#">진행현황</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <a href="#" class="ico_all_menu open">
+          <img src="../../images/common/ico_all_menu_ov.png" alt="전체메뉴 보러가기">
+        </a>
+
+        <a href="#" class="ico_all_menu">
+          <img src="../../images/common/ico_all_menu.png" alt="전체메뉴 보러가기">
+        </a>
+
+      </div>
+      <span class="navBg"></span>
+    </div>
+    <div id="contents">
+      <div class="location_wrap">
+        <ul class="location_inner">
+          <li>
+            <a href="#" title="홈으로 바로가기"><span>HOME</span></a>
+          </li>
+          <li>
+            협회안내
+          </li>
+          <li>
+            조직 및 부서별 현황
+          </li>
+        </ul>
+      </div>
+
+      <div class="title_wrap">
+        <div class="title_inner">
+          <h3>조직 및 부서별 현황</h3>
+        </div>
+      </div>
+
+      <div class="list_wrap footer_margin">
+        <div class="list_asso_inner">
+          <div class="org_wrap">
+            <div class="org_area org1">
+              <a href="">총회</a>
+            </div>
+            <div class="org_area org1">
+              <a href="">이사회</a>
+            </div>
+            <div class="org_area org2 popup1">
+              <a href="javascript:void(0)">회장</a>
+            </div>
+            <div class="org_area org2 popup2">
+              <a href="javascript:void(0)" class="org_bar">전무</a>
+            </div>  
+            <div class="org_area2">
+              <a class="popup3" href="javascript:void(0)">카드본부</a>
+              <div class="org_area3 org_area3_1">
+                <a href="javascript:void(0)">카드기획부</a>              
+              </div>
+              <div class="org_area3 org_area3_1">
+                <a href="javascript:void(0)">카드운영부</a>              
+              </div>
+              <div class="org_area3 org_area3_1">
+                <a href="javascript:void(0)">소비자보호부</a>              
+              </div>
+              <div class="org_area3 org_area3_1">
+                <a href="javascript:void(0)">자율규제부</a>              
+              </div>                                    
+            </div><!--카드본부-->
+            <div class="org_area2">
+              <a  class="popup4" href="">금융본부</a>
+              <div class="org_area3 org_area3_2">
+                <a href="javascript:void(0)">금융부</a>              
+              </div>
+              <div class="org_area3 org_area3_2">
+                <a href="javascript:void(0)">신기술금융부</a>              
+              </div>
+              <div class="org_area3 org_area3_2">
+                <a href="javascript:void(0)">여신금융교육연수원</a>              
+              </div>
+              <div class="org_area3 org_area3_2">
+                <a href="javascript:void(0)">정보시스템부</a>              
+              </div>               
+            </div><!--금융본부-->
+            <div class="org_area2">
+              <a  class="popup5" href="">지원본부</a>
+              <div class="org_area3 org_area4 org_area3_3">
+                <a href="javascript:void(0)">종합기획부
+                  <p>법무팀</p>
+                </a>
+              </div>
+              <div class="org_area3 org_area3_3">
+                <a href="javascript:void(0)">홍보부</a>              
+              </div>
+              <div class="org_area3 org_area3_3">
+                <a href="javascript:void(0)">대외협력부</a>              
+              </div>
+              <div class="org_area3 org_area3_3">
+                <a href="javascript:void(0)">경영지원부</a>              
+              </div>                        
+            </div><!--지원본부-->
+            <div class="org_area2 org_area2_none">
+              <div class="org_area3 org_area5 org_area3_4">
+                <a href="javascript:void(0)">여신금융연구소</a>              
+              </div>
+              <div class="org_area3 org_area3_4">
+                <a href="javascript:void(0)" class="org_bar2">감사실</a>              
+              </div>              
+            </div>   
+            <div class="org_area6">
+              <a href="" >감사</a>              
+            </div>    
+
+            <div class="org_all_popup org_popup1">
+              <div class="org_boxlayer">
+                <div class="org_txt">
+                  <div class="org_txt_le">
+                    <img src="http://via.placeholder.com/148x188" alt=""/>
+                    <h5>회장 <span>김주현</span></h5>
+                  </div>
+                  <div class="org_txt_ra">
+                    <p>
+                      <span>학력</span>
+                      중앙고등학교<br />
+                      서울대학교 경제학 학사<br />
+                      서울대학교 대학원 경영학<br />
+                      美 워싱턴대 MBA
+                    </p><br />
+                    <p>
+                      <span>주요경력</span>
+                      금융위원회 사무처장<br />
+                      예금보험공사 사장<br />
+                      우리금융경영연구소 대표
+                    </p>                  
+                  </div>                
+                </div>
+              </div>
+            </div><!--pop1-->                           
+            <div class="org_all_popup org_popup2">
+              <div class="org_boxlayer">
+                <div class="org_txt">
+                  <div class="org_txt_le">
+                    <img src="http://via.placeholder.com/148x188" alt=""/>
+                    <h5>전무이사 <span>오광만</span></h5>
+                  </div>
+                  <div class="org_txt_ra">
+                    <p>
+                      <span>학력</span>
+                      전북대학교 농학과<br />
+                      연세대 행정대학원 행정학과
+                    </p><br />
+                    <p>
+                      <span>주요경력</span>
+                      국가경쟁력강화위원회 운영지원과장<br />
+                      기획재정부 기획조정실 비상계획과장<br />
+                      기획재정부 국고국 출자관리과장<br />
+                      기획재정부 공공정책국 인재경영과장<br />
+                      기획재정부 운영지원과장
+                    </p>                  
+                  </div>                
+                </div>
+              </div>
+            </div><!--pop2-->                 
+            <div class="org_all_popup org_popup3">
+              <div class="org_boxlayer org_boxlayer2">
+                <div class="org_txt">
+                  <div class="org_txt_le">
+                    <img src="http://via.placeholder.com/148x188" alt=""/>
+                    <h5>카드본부장 <span>배종균</span></h5>
+                  </div>
+                  <div class="org_txt_ra">
+                    <p>
+                      <span>학력</span>
+                      서강대학교 경영학과
+                    </p><br />
+                    <p>
+                      <span>주요경력</span>
+                      KB국민은행 부산 법조타운 지점장<br />
+                      KB국민카드 전략담당최고책임자(CSO)<br /> 및 재무담당최고책임자(CFO)<br />
+                      CBM 컨설턴트 상무이사<br />
+                      애큐온캐피탈 전무이사<br />
+                      브이피(주) 전무이사
+                    </p>                  
+                  </div>                
+                </div>
+              </div>
+            </div><!--pop3-->                                
+            <div class="org_all_popup org_popup4">
+              <div class="org_boxlayer org_boxlayer2">
+                <div class="org_txt">
+                  <div class="org_txt_le">
+                    <img src="http://via.placeholder.com/148x188" alt=""/>
+                    <h5>금융본부장 <span>이태운</span></h5>
+                  </div>
+                  <div class="org_txt_ra">
+                    <p>
+                      <span>학력</span>
+                      한국외국어대학교 경영학과<br />
+                      고려대학교 경영대학원<br />
+                      최고경영자과정 수료
+                    </p><br />
+                    <p>
+                      <span>주요경력</span>
+                      여신금융협회 종합기획부 부장<br />
+                      여신금융협회 홍보부 부장(이사대우)<br />
+                      여신금융협회 사업본부장(상무이사)
+                    </p>                  
+                  </div>                
+                </div>
+              </div>
+            </div><!--pop4-->
+            <div class="org_all_popup org_popup5">
+              <div class="org_boxlayer org_boxlayer2">
+                <div class="org_txt">
+                  <div class="org_txt_le">
+                    <img src="http://via.placeholder.com/148x188" alt=""/>
+                    <h5>지원본부장 <span>김민기</span></h5>
+                  </div>
+                  <div class="org_txt_ra">
+                    <p>
+                      <span>학력</span>
+                      한양대학교 무역학과<br />
+                      성균관대학교 대학원<br />
+                      경영학 석사(EMBA)
+                    </p><br />
+                    <p>
+                      <span>주요경력</span>
+                      여신금융협회 금융부 부장<br />
+                      여신금융협회 종합기획부 부장<br />
+                      여신금융협회 홍보부 부장
+                    </p>                  
+                  </div>                
+                </div>
+              </div>
+            </div><!--pop5-->   
+          </div><!--org-->
+          <div class="org_table_wrap">
+            <div class="table_list">
+              <div class="ta1 all_ta">
+                <div class="list_table_wrap data_table_wrap">
+                  <table caption="조직 및 부서별 현황">
+                    <colgroup>
+                      <col width="201"/>
+                      <col width="820"/>
+                      <col width="181"/>
+                    </colgroup>
+                    <tr>
+                      <th>부서</th>
+                      <th>담당업무</th>
+                      <th>전화번호</th>
+                    </tr>
+                    <tr>
+                      <td rowspan="9">
+                        카드기획부
+                      </td>
+                      <td class="align_L">
+                        카드기획부 업무 총괄
+                      </td>
+                      <td>02-2011-0742</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        카드 법규·제도·정책·현안 및 회원사 지원
+                      </td>
+                      <td>02-2011-0619</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        여전법 제개정 및 가맹점 정책, 규제개선
+                      </td>
+                      <td>02-2011-0737</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        회원 업무, 규제 개선 및 회의체 운영, 기획자료 작성
+                      </td>
+                      <td>02-2011-0645</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        회원 업무 및 매출정보통합조회서비스
+                      </td>
+                      <td>02-2011-0763</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        가맹점 정책 및 운영 업무
+                      </td>
+                      <td>02-2011-0673</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        회원업무, 회원사 지원
+                      </td>
+                      <td>02-2011-0667</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        가맹점 업무, 포인트통합조회계좌입금서비스 업무
+                      </td>
+                      <td>02-2011-0632</td>
+                    </tr>      
+                    <tr>
+                      <td class="align_L">
+                        가맹점 업무, 회원사 지원
+                      </td>
+                      <td>02-2011-0725</td>
+                    </tr>                                                                                     
+                  </table>
+                </div>
+              </div>
+            </div><!--ta1-->
+            <div class="table_list">
+              <div class="ta2 all_ta">
+                <div class="list_table_wrap data_table_wrap">
+                  <table caption="조직 및 부서별 현황">
+                    <colgroup>
+                      <col width="201"/>
+                      <col width="820"/>
+                      <col width="181"/>
+                    </colgroup>
+                    <tr>
+                      <th>부서</th>
+                      <th>담당업무</th>
+                      <th>전화번호</th>
+                    </tr>
+                    <tr>
+                      <td rowspan="4">
+                        카드운영부
+                      </td>
+                      <td class="align_L">
+                        카드운영부 업무 총괄
+                      </td>
+                      <td>02-2011-0727</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        신용카드 단말기 등록 및 기술표준 관련 업무
+                      </td>
+                      <td>02-2011-0694</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        슬기로운 카드생활 09편
+                      </td>
+                      <td>02-2011-0729</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        슬기로운 카드생활 08편
+                      </td>
+                      <td>02-2011-0618</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div><!--ta2-->
+            <div class="table_list">
+              <div class="ta3 all_ta">
+                <div class="list_table_wrap data_table_wrap">
+                  <table caption="조직 및 부서별 현황">
+                    <colgroup>
+                      <col width="201"/>
+                      <col width="820"/>
+                      <col width="181"/>
+                    </colgroup>
+                    <tr>
+                      <th>부서</th>
+                      <th>담당업무</th>
+                      <th>전화번호</th>
+                    </tr>
+                    <tr>
+                      <td rowspan="7">
+                        소비자보호부
+                      </td>
+                      <td class="align_L">
+                        소비자보호 업무 총괄
+                      </td>
+                      <td>02-2011-0784</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        신용카드모집인 관련 법규·정책·현안 및 민원 업무
+                      </td>
+                      <td>02-2011-0657</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        소비자보호 관련 법규·제도·현안·정책 업무
+                      </td>
+                      <td>02-2011-0764</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        신용카드모집인 관련 법규·정책·현안 및 민원 업무
+                      </td>
+                      <td>02-2011-0659</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        소비자보호 관련 법규·제도·현안·정책 및 공시 업무
+                      </td>
+                      <td>02-2011-0718</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        소비자보호 관련 법규·제도·현안·정책 및 공시 업무
+                      </td>
+                      <td>02-2011-0628</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        신용카드모집인 등록, 관리 등 제반 업무
+                      </td>
+                      <td>02-2011-0681</td>
+                    </tr>                                                      
+                  </table>
+                </div>
+              </div>
+            </div><!--ta3-->  
+            <div class="table_list">
+              <div class="ta4 all_ta">
+                <div class="list_table_wrap data_table_wrap">
+                  <table caption="조직 및 부서별 현황">
+                    <colgroup>
+                      <col width="201"/>
+                      <col width="820"/>
+                      <col width="181"/>
+                    </colgroup>
+                    <tr>
+                      <th>부서</th>
+                      <th>담당업무</th>
+                      <th>전화번호</th>
+                    </tr>
+                    <tr>
+                      <td rowspan="8">
+                        자율규제부
+                      </td>
+                      <td class="align_L">
+                        자율규제부 업무 총괄
+                      </td>
+                      <td>02-2011-0676</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        자율규제 관련 정책·제도, 광고 자율심의 업무
+                      </td>
+                      <td>02-2011-0755</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        자율규제 관련 정책·제도, 약관 사후보고 업무
+                      </td>
+                      <td>02-2011-0726</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        약관 사후보고 접수·처리 및 규정 제·개정, 약관 변경명령 관련 업무, B2B 렌탈 자율심의 업무
+                      </td>
+                      <td>02-2011-0759</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        약관 사후보고 접수·처리 및 결과보고, B2B 렌탈 자율심의 업무
+                      </td>
+                      <td>02-2011-0714</td>
+                    </tr>                    
+                    <tr>
+                      <td class="align_L">
+                        광고 자율심의 접수·처리 및 금융당국 결과보고, 실태점검, 광고 규정 제·개정 업무
+                      </td>
+                      <td>02-2011-0661</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        광고 자율심의 접수·처리, 광고심의 시스템 관리, 부당광고신고센터 및 시민감시단 운영 업무
+                      </td>
+                      <td>02-2011-0713</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        광고 자율심의 접수·처리, 광고 관련 교육 및 설명회, 우선심의권 배정 및 관리 업무
+                      </td>
+                      <td>02-2011-0773</td>
+                    </tr>                                                      
+                  </table>
+                </div>
+              </div>
+            </div><!--ta4-->              
+            <div class="table_list table_list2">
+              <div class="ta5 all_ta">
+                <div class="list_table_wrap data_table_wrap">
+                  <table caption="조직 및 부서별 현황">
+                    <colgroup>
+                      <col width="201"/>
+                      <col width="820"/>
+                      <col width="181"/>
+                    </colgroup>
+                    <tr>
+                      <th>부서</th>
+                      <th>담당업무</th>
+                      <th>전화번호</th>
+                    </tr>
+                    <tr>
+                      <td rowspan="7">
+                        금융부
+                      </td>
+                      <td class="align_L">
+                        금융부 업무 총괄
+                      </td>
+                      <td>02-2011-0743</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        여신전문금융 관련 정책 및 현안 대응
+                      </td>
+                      <td>02-2011-0765</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        여전업 관련 회계/세제, 건전성 및 외국환 관련 업무
+                      </td>
+                      <td>02-2011-0736</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        가계·기업대출, 자율규제 관련 업무
+                      </td>
+                      <td>02-2011-0717</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        자동차금융 법규·제도개선, 통계 관련 업무
+                      </td>
+                      <td>02-2011-0654</td>
+                    </tr>                    
+                    <tr>
+                      <td class="align_L">
+                        표준약관 제·개정 관련 업무, 행정정보 공동이용 업무
+                      </td>
+                      <td>02-2011-0665</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        대출모집인, 자금세탁방지 관련 업무
+                      </td>
+                      <td>02-2011-0655</td>
+                    </tr>                                                     
+                  </table>
+                </div>
+              </div>
+            </div><!--ta5-->             
+            <div class="table_list table_list2">
+              <div class="ta6 all_ta">
+                <div class="list_table_wrap data_table_wrap">
+                  <table caption="조직 및 부서별 현황">
+                    <colgroup>
+                      <col width="201"/>
+                      <col width="820"/>
+                      <col width="181"/>
+                    </colgroup>
+                    <tr>
+                      <th>부서</th>
+                      <th>담당업무</th>
+                      <th>전화번호</th>
+                    </tr>
+                    <tr>
+                      <td rowspan="4">
+                        신기술금융부
+                      </td>
+                      <td class="align_L">
+                        신기술금융부 업무 총괄
+                      </td>
+                      <td>02-2011-0785</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        신기술금융 법규·제도·정책·현안 관련 업무
+                      </td>
+                      <td>02-2011-0640</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        신기술금융 법규·제도·정책·현안 관련 업무 및 신기술금융 실적·자료수집 업무
+                      </td>
+                      <td>02-2011-0716</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        신기술금융 법규·제도·정책·현안 관련 업무 및 신기술금융 실적·자료수집 업무
+                      </td>
+                      <td>02-2011-0669</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div><!--ta6-->                   
+            <div class="table_list table_list2">
+              <div class="ta7 all_ta">
+                <div class="list_table_wrap data_table_wrap">
+                  <table caption="조직 및 부서별 현황">
+                    <colgroup>
+                      <col width="201"/>
+                      <col width="820"/>
+                      <col width="181"/>
+                    </colgroup>
+                    <tr>
+                      <th>부서</th>
+                      <th>담당업무</th>
+                      <th>전화번호</th>
+                    </tr>
+                    <tr>
+                      <td rowspan="4">
+                        여신금융교육연수원
+                      </td>
+                      <td class="align_L">
+                        여신금융교육연수원 업무 총괄
+                      </td>
+                      <td>02-2011-0724</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        회원사 교육운영, 금융교육
+                      </td>
+                      <td>02-2011-0753</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        회원사 교육운영, 카드모집인 교육 및 시험
+                      </td>
+                      <td>02-2011-0647</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        회원사 교육운영, 대출모집인 교육
+                      </td>
+                      <td>02-2011-0660</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div><!--ta7-->
+            <div class="table_list table_list2">
+              <div class="ta8 all_ta">
+                <div class="list_table_wrap data_table_wrap">
+                  <table caption="조직 및 부서별 현황">
+                    <colgroup>
+                      <col width="201"/>
+                      <col width="820"/>
+                      <col width="181"/>
+                    </colgroup>
+                    <tr>
+                      <th>부서</th>
+                      <th>담당업무</th>
+                      <th>전화번호</th>
+                    </tr>
+                    <tr>
+                      <td rowspan="8">
+                        정보시스템부
+                      </td>
+                      <td class="align_L">
+                        정보시스템부 업무 총괄
+                      </td>
+                      <td>02-2011-0786</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        홈페이지 및 모바일앱 개발 및 운영
+                      </td>
+                      <td>02-2011-0789</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        전산시스템 운영 및 보안관리
+                      </td>
+                      <td>02-2011-0735</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        홈페이지 개발 및 전산시스템 운영
+                      </td>
+                      <td>02-2011-0738</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        전산시스템 개발 및 운영
+                      </td>
+                      <td>02-2011-0690</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        홈페이지 개발 및 운영
+                      </td>
+                      <td>02-2011-0679</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        홈페이지 개발 및 운영
+                      </td>
+                      <td>02-2011-0754</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        전산시스템 운영 및 보안관리
+                      </td>
+                      <td>02-2011-0630</td>
+                    </tr>                                                                                
+                  </table>
+                </div>
+              </div>
+            </div><!--ta8-->          
+            <div class="table_list table_list3">
+              <div class="ta9 all_ta">
+                <div class="list_table_wrap data_table_wrap">
+                  <table caption="조직 및 부서별 현황">
+                    <colgroup>
+                      <col width="201"/>
+                      <col width="820"/>
+                      <col width="181"/>
+                    </colgroup>
+                    <tr>
+                      <th>부서</th>
+                      <th>담당업무</th>
+                      <th>전화번호</th>
+                    </tr>
+                    <tr>
+                      <td rowspan="4">
+                        종합기획부
+                      </td>
+                      <td class="align_L">
+                        종합기획부 업무 총괄
+                      </td>
+                      <td>02-2011-0740</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        업권 공통의 사업발굴, 규제개혁 및 제도개선 등 회원사 지원
+                      </td>
+                      <td>02-2011-0745</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        사업계획·사업실적 및 예산편성 업무, 신용카드사회공헌재단 관리
+                      </td>
+                      <td>02-2011-0649</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        자율규제 관리, 회원사 해외진출 지원, 금융 유관기관 협조
+                      </td>
+                      <td>02-2011-0664</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div><!--ta9-->   
+            <div class="table_list table_list3">
+              <div class="ta9 all_ta">
+                <div class="list_table_wrap data_table_wrap">
+                  <table caption="조직 및 부서별 현황">
+                    <colgroup>
+                      <col width="201"/>
+                      <col width="820"/>
+                      <col width="181"/>
+                    </colgroup>
+                    <tr>
+                      <th>부서</th>
+                      <th>담당업무</th>
+                      <th>전화번호</th>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">
+                        법무팀
+                      </td>
+                      <td class="align_L">
+                        법무 업무 총괄
+                      </td>
+                      <td>02-2011-0748</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        협회 내부 법무지원·내규심사
+                      </td>
+                      <td>02-2011-0761</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div><!--ta9-->                    
+            <div class="table_list table_list3">
+              <div class="ta10 all_ta">
+                <div class="list_table_wrap data_table_wrap">
+                  <table caption="조직 및 부서별 현황">
+                    <colgroup>
+                      <col width="201"/>
+                      <col width="820"/>
+                      <col width="181"/>
+                    </colgroup>
+                    <tr>
+                      <th>부서</th>
+                      <th>담당업무</th>
+                      <th>전화번호</th>
+                    </tr>
+                    <tr>
+                      <td rowspan="3">
+                        홍보부
+                      </td>
+                      <td class="align_L">
+                        홍보부 업무 총괄
+                      </td>
+                      <td>02-2011-0723</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        언론동향 모니터링, 기사 대응
+                      </td>
+                      <td>02-2011-0744</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        취재요청자료 제공 등
+                      </td>
+                      <td>02-2011-0648</td>
+                    </tr>                    
+                  </table>
+                </div>
+              </div>
+            </div><!--ta10-->    
+            <div class="table_list table_list3">
+              <div class="ta11 all_ta">
+                <div class="list_table_wrap data_table_wrap">
+                  <table caption="조직 및 부서별 현황">
+                    <colgroup>
+                      <col width="201"/>
+                      <col width="820"/>
+                      <col width="181"/>
+                    </colgroup>
+                    <tr>
+                      <th>부서</th>
+                      <th>담당업무</th>
+                      <th>전화번호</th>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">
+                        대외협력부
+                      </td>
+                      <td class="align_L">
+                        대외협력부 업무 총괄
+                      </td>
+                      <td>02-2011-0684</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        국회 및 금융당국 관련 운영지원 및 입법대응
+                      </td>
+                      <td>02-2011-0715</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div><!--ta11-->
+            <div class="table_list table_list3">
+              <div class="ta12 all_ta">
+                <div class="list_table_wrap data_table_wrap">
+                  <table caption="조직 및 부서별 현황">
+                    <colgroup>
+                      <col width="201"/>
+                      <col width="820"/>
+                      <col width="181"/>
+                    </colgroup>
+                    <tr>
+                      <th>부서</th>
+                      <th>담당업무</th>
+                      <th>전화번호</th>
+                    </tr>
+                    <tr>
+                      <td rowspan="4">
+                        경영지원부
+                      </td>
+                      <td class="align_L">
+                        경영지원부 업무 총괄
+                      </td>
+                      <td>02-2011-0787</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        인사관리업무
+                      </td>
+                      <td>02-2011-0728</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        회계경리업무
+                      </td>
+                      <td>02-2011-0749</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        회계경리 및 총무업무
+                      </td>
+                      <td>02-2011-0772</td>
+                    </tr>                                        
+                  </table>
+                </div>
+              </div>
+            </div><!--ta12-->            
+            <div class="table_list table_list4">
+              <div class="ta13 all_ta">
+                <div class="list_table_wrap data_table_wrap">
+                  <table caption="조직 및 부서별 현황">
+                    <colgroup>
+                      <col width="201"/>
+                      <col width="820"/>
+                      <col width="181"/>
+                    </colgroup>
+                    <tr>
+                      <th>부서</th>
+                      <th>담당업무</th>
+                      <th>전화번호</th>
+                    </tr>
+                    <tr>
+                      <td rowspan="7">
+                        여신금융연구소
+                      </td>
+                      <td class="align_L">
+                        여신금융연구소 업무 총괄
+                      </td>
+                      <td>02-2011-0750</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        국내·외 여신금융업 제도 및 조사연구
+                      </td>
+                      <td>02-2011-0760</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        국내·외 여신금융업 관련 조사연구 및 통계분석·전망, 각종 금융 관련 연구기관과의 교류 및 협조
+                      </td>
+                      <td>02-2011-0719</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        국내·외 여신금융업 관련 조사연구 및 관련 통계자료 분석
+                      </td>
+                      <td>02-2011-0769</td>
+                    </tr>    
+                    <tr>
+                      <td class="align_L">
+                        카드업 동향·제도정책 등 조사연구 및 관련 통계자료 분석
+                      </td>
+                      <td>02-2011-0670</td>
+                    </tr>    
+                    <tr>
+                      <td class="align_L">
+                        리스·할부금융업 동향·제도정책 등 조사연구 및 관련 통계자료 분석
+                      </td>
+                      <td>02-2011-0675</td>
+                    </tr>    
+                    <tr>
+                      <td class="align_L">
+                        국내·외 여신금융업 관련 조사연구 및 통계·제도·정책 분석
+                      </td>
+                      <td>02-2011-0674</td>
+                    </tr>                                                                                                    
+                  </table>
+                </div>
+              </div>
+            </div><!--ta13-->           
+            <div class="table_list table_list4">
+              <div class="ta14 all_ta">
+                <div class="list_table_wrap data_table_wrap">
+                  <table caption="조직 및 부서별 현황">
+                    <colgroup>
+                      <col width="201"/>
+                      <col width="820"/>
+                      <col width="181"/>
+                    </colgroup>
+                    <tr>
+                      <th>부서</th>
+                      <th>담당업무</th>
+                      <th>전화번호</th>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">
+                        감사실
+                      </td>
+                      <td class="align_L">
+                        감사실 업무 총괄
+                      </td>
+                      <td>02-2011-0783</td>
+                    </tr>
+                    <tr>
+                      <td class="align_L">
+                        일상감사 및 정기감사 등 감사업무
+                      </td>
+                      <td>02-2011-0762</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div><!--ta14-->                   
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="business_wrap">
+        <ul class="business_list">
+          <li>
+            <button>관련사이트 <span class="arrow"></span></button>
+            <div class="sub_cont">
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">여신금융포럼</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">소비자금융협회</a>
+                </li>
+              </ul>
+              <ul>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button>신용카드 <span class="arrow"></span></button>
+            <div class="sub_cont">
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">롯데카드</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">비씨카드</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">신한카드</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">삼성카드</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">우리카드</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">하나카드</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">현대카드</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">KB국민카드</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button>리스 &middot; 할부금융사 <span class="arrow"></span></button>
+            <div class="sub_cont">
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">데라게란덴</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">도이치파이낸셜</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">롯데오토리스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">롯데캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">메르세데스벤츠파이낸셜서비스코리아</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">메리츠캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">메이슨캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">무림캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">볼보파이낸셜서비스코리아</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">산은캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">JB우리캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">RCI파이낸셜서비스코리아</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">스카니아파이낸스코리아</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">스타파이낸셜서비시스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">신한캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">아주캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">애큐온캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">에코캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">엠파크캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">오릭스캐피탈코리아</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">오케이캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">웰릭스캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">JT캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">SPC캐피탈</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">제이엠캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">중도파이넨스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">케이카캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">코스모캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">토요타파이낸셜</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">폭스바겐파이낸셜서비스코리아</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">하나캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">하이델베르그</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">한국자산캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">한국캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">KB캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">SY오토캐피탈</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">한국투자캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">현대캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">현대커머셜</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">홈앤캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">효성캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">AJ캐피탈파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">BMW파이낸셜</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">BNK캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">DB캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">DGB캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">NH농협캐피탈</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button>신기술금융사 <span class="arrow"></span></button>
+            <div class="sub_cont">
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">나우아이비캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">나이스투자파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">농심캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">동유기술투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">디에이밸류인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">레이크우드파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">롯데액셀러레이터</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">리더스기술투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">메가인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">미래에셋캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">미래에쿼티파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">벡터기술투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">브이에스인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">삼성벤처투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">솔론인베스트</a>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">시너지아이비투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">씨티케이인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">아르케인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">아주아이비투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">액시스인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">얼머스인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">에스더블유인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">에스티캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">에이스투자금융</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">엔베스터</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">엔코어벤처스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">오비트파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">우리기술투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">위드윈인베스트먼트</a>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">유비쿼스인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">유일기술투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">이스트게이트인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">이앤인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">인탑스인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">제니타스인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">지엠비인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">케이디인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">케이클라비스인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">케이티인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">코나아이파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">코너스톤투자파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">코리아오메가투자금융</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">큐캐피탈파트너스</a>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <a href="#" target="_blank" title="새창">키움캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">킹고투자파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">토니인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">티그리스인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">펄어비스캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">포스코기술투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">프렌드투자파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">하나벤처스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">하랑기술투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">한빛인베스트먼트</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">현대투자파트너스</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">IBK캐피탈</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">NH벤처투자</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창">YG인베스트먼트</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer_info">
+          <div class="footer_link">
+            <ul>
+              <li>
+                <a href="#"><span>HOME</span></a>
+              </li>
+              <li>
+                <a href="#">개인정보처리방침</a>
+              </li>
+              <li>
+                <a href="#">오시는길</a>
+              </li>
+              <li>
+                <a href="#">사이트맵</a>
+              </li>
+              <li>
+                <a href="#"><span class="eng">ENGLISH</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <p>서울특별시 중구 다동길 43 (다동70번지) 한외빌딩13층 여신금융협회 (04521) <span>대표전화 02-2011-0700</span></p>
+            <p>COPYRIGHT © THE CREDIT FINANCE ASSOCIATION ALL RIGHTS RESERVED</p>
+          </div>
+          <div class="footer_logo">
+            <a href="#">
+              <img src="../../images/common/footer_logo.png" alt="여신금융협회">
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+				$('#visual').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+					autoplay:true,
+					autoplaySpeed:2000,
+					speed: 500,
+					pauseOnFocus:false,
+					pauseOnHover:false,
+					pauseOnDotsHover:true,
+					touchMove:false,
+					infinite: true,
+					arrows: false,
+					dots: true,
+          fade: true,
+          accessibility: true,
+        });
+
+        $('#bottom_slide').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+					autoplay:true,
+					autoplaySpeed:3000,
+					speed: 700,
+					pauseOnFocus:false,
+					pauseOnHover:false,
+					pauseOnDotsHover:true,
+					touchMove:false,
+					infinite: true,
+					arrows: false,
+					dots: true,
+          fade: true,
+          accessibility: true,
+        });
+
+        $('#relate_slide').slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+					autoplay:false,
+					speed: 700,
+					pauseOnFocus:false,
+					pauseOnHover:false,
+					pauseOnDotsHover:true,
+					touchMove:false,
+					infinite: false,
+					arrows: true,
+					dots: false,
+          fade: false,
+          accessibility: true,
+        });
+
+ 
+    $(document).ready(function () {
+
+          $(".popup1").mouseover(function (e) {
+              // $(".org_popup").css("display", "block"); 
+              $(".org_popup1").stop().fadeIn(350);
+              $(this).find(".org_popup1").css("display", "block"); 
+              e.preventDefault();
+          })
+          $(".popup1").mouseout(function (e) {
+              $(".org_popup1").fadeOut(350);
+              e.preventDefault();
+          })
+
+          $(".popup2").mouseover(function (e) {
+              $(".org_popup2").stop().fadeIn(350);
+              $(this).find(".org_popup2").css("display", "block"); 
+              e.preventDefault();
+          })
+          $(".popup2").mouseout(function (e) {
+              $(".org_popup2").fadeOut(350);
+              e.preventDefault();
+          })          
+
+          $(".popup3").mouseover(function (e) {
+              $(".org_popup3").stop().fadeIn(350);
+              $(this).find(".org_popup3").css("display", "block"); 
+              e.preventDefault();
+          })
+          $(".popup3").mouseout(function (e) {
+              $(".org_popup3").fadeOut(350);
+              e.preventDefault();
+          })   
+          $(".popup4").mouseover(function (e) {
+              $(".org_popup4").stop().fadeIn(350);
+              $(this).find(".org_popup4").css("display", "block"); 
+              e.preventDefault();
+          })
+          $(".popup4").mouseout(function (e) {
+              $(".org_popup4").fadeOut(350);
+              e.preventDefault();
+          })        
+          $(".popup5").mouseover(function (e) {
+              $(".org_popup5").stop().fadeIn(350);
+              $(this).find(".org_popup5").css("display", "block"); 
+              e.preventDefault();
+          })
+          $(".popup5").mouseout(function (e) {
+              $(".org_popup5").fadeOut(350);
+              e.preventDefault();
+          })                           
+      });
+
+
+    $(document).ready(function(){
+
+     // $('.org_area3 a').click(function(e){
+     //   $(this).attr("href") === "#" && e.preventDefault();
+     // })
+
+      
+      // $('.org_area3').click(function(){
+      //   var index = $("div").index();
+			// 	console.log(index);
+      //   alert();
+
+      // });		     
+
+
+      $(".org_area2 .org_area3_1").on('click', function() {
+        var i = $(this).index();  
+        console.log(i);
+        // var index = $(this).index();
+        $(".table_list").css("display","block");
+        $(".table_list2").css("display","none");
+        $(".table_list3").css("display","none");
+        $(".table_list4").css("display","none");
+
+        if(i == 1){
+          $('.table_list .ta1').addClass("on");
+        }else{
+          $('.table_list .ta1').removeClass("on");
+        }
+
+        if(i == 2){
+          $('.table_list .ta2').addClass("on");
+        }else{
+          $('.table_list .ta2').removeClass("on");
+        }
+
+        if(i == 3){
+          $('.table_list .ta3').addClass("on");
+        }else{
+          $('.table_list .ta3').removeClass("on");
+        }
+
+        if(i == 4){
+          $('.table_list .ta4').addClass("on");
+        }else{
+          $('.table_list .ta4').removeClass("on");
+        }      
+      });
+
+      $(".org_area2 .org_area3_2").on('click', function() {
+        var i = $(this).index();  
+        console.log(i);
+        $(".table_list").css("display","none");
+        $(".table_list2").css("display","block");
+        $(".table_list3").css("display","none");
+        $(".table_list4").css("display","none");
+
+        if(i == 1){
+          $('.table_list .ta5').addClass("on");
+        }else{
+          $('.table_list .ta5').removeClass("on");
+        }
+        if(i == 2){
+          $('.table_list .ta6').addClass("on");
+        }else{
+          $('.table_list .ta6').removeClass("on");
+        }
+        if(i == 3){
+          $('.table_list .ta7').addClass("on");
+        }else{
+          $('.table_list .ta7').removeClass("on");
+        }
+        if(i == 4){
+          $('.table_list .ta8').addClass("on");
+        }else{
+          $('.table_list .ta8').removeClass("on");
+        }        
+      });      
+
+      $(".org_area2 .org_area3_3").on('click', function() {
+        var i = $(this).index();  
+        console.log(i);
+        $(".table_list").css("display","none");
+        $(".table_list2").css("display","none");
+        $(".table_list3").css("display","block");
+        $(".table_list4").css("display","none");
+
+        if(i == 1){
+          $('.table_list .ta9').addClass("on");
+        }else{
+          $('.table_list .ta9').removeClass("on");
+        }
+        if(i == 2){
+          $('.table_list .ta10').addClass("on");
+        }else{
+          $('.table_list .ta10').removeClass("on");
+        }
+        if(i == 3){
+          $('.table_list .ta11').addClass("on");
+        }else{
+          $('.table_list .ta11').removeClass("on");
+        }
+        if(i == 4){
+          $('.table_list .ta12').addClass("on");
+        }else{
+          $('.table_list .ta12').removeClass("on");
+        }        
+      });       
+
+      $(".org_area2 .org_area3_4").on('click', function() {
+        var i = $(this).index();  
+        console.log(i);
+        $(".table_list").css("display","none");
+        $(".table_list2").css("display","none");
+        $(".table_list3").css("display","none");
+        $(".table_list4").css("display","block");
+        
+        if(i == 0){
+          $('.table_list .ta13').addClass("on");
+        }else{
+          $('.table_list .ta13').removeClass("on");
+        }
+        if(i == 1){
+          $('.table_list .ta14').addClass("on");
+        }else{
+          $('.table_list .ta14').removeClass("on");
+        }    
+      });               
+
+
+    });
+    
+  </script>
+</body>
+</html>

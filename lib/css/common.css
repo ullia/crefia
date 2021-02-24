@@ -82,9 +82,33 @@ a:active {text-decoration:none;}
 .ma_L8{
 	margin-left: 8px;
 }
+
+.ma_L20{
+	margin-left: 20px;
+}
+
+.ma_B130{
+	margin-bottom: 130px;
+}
+
 .wid_360{
 	width: 360px;
 }
+
+.footer_margin{
+	margin-bottom: 120px;
+}
+
+.dia_bul::before{
+	content: '';
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	background: url('../../images/common/sprite.png')no-repeat 0 -243px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
 select {
 	font:400 15px/44px 'Montserrat','Noto Sans KR';
 	height:44px;
@@ -279,6 +303,10 @@ table td .ico_download span{
 	border: 1px solid #e5e5e5;
 	box-sizing: border-box;
 	padding: 30px 20px;
+}
+
+.common_note.top{
+	margin: 0 auto 50px;
 }
 
 .common_note li{
@@ -567,7 +595,9 @@ table td .ico_download span{
 }
 
 .list_view_cont_inner .cont_area{
-
+	font:400 14px/24px 'Montserrat','Noto Sans KR';
+	color:#222;
+	letter-spacing: -0.7px;
 }
 
 .list_view_cont_inner .file_area{
@@ -630,7 +660,7 @@ table td .ico_download span{
 
 .list_view_cont_inner .file_area .file_list li a p{
 	display: inline-block;
-	font:300 15px/25px 'Noto Sans KR';
+	font:400 15px/25px 'Montserrat','Noto Sans KR';
   color:#0c4fa0;
   text-align: left;
   letter-spacing: -0.7px;
@@ -659,10 +689,47 @@ table td .ico_download span{
 	height: 46px;
 	background-color: #666;
 	border-radius: 4px;
+	box-sizing: border-box;
 }
 
 .btn_grey:hover{
 	background-color: #222;
+}
+
+.btn_white{
+	display: inline-block;
+	font:400 16px/44px 'Noto Sans KR';
+  color:#666 !important;
+	border: 1px solid #999;
+  text-align: center;
+  letter-spacing: -0.7px;
+	width: 166px;
+	height: 46px;
+	background-color: #fff;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.btn_white:hover{
+	color:#222 !important;
+	border: 1px solid #222;
+}
+
+.btn_black{
+	display: inline-block;
+	font:400 16px/46px 'Noto Sans KR';
+  color:#fff !important;
+  text-align: center;
+  letter-spacing: -0.7px;
+	width: 166px;
+	height: 46px;
+	background-color: #222;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.btn_black:hover{
+	background-color: #0c4da2;
 }
 
 

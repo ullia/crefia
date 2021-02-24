@@ -502,9 +502,6 @@
 * sub05
 *
 *****/
-#contents{
-  padding-bottom: 120px;
-}
 div[class*='_inner']{
   width: 1200px;
   margin: 0 auto;
@@ -521,9 +518,7 @@ div[class*='_inner']{
   border: 0 !important;
 }
 
-/* 
-협회회원사 > 인사말 
-*/
+/* 협회회원사 > 인사말 */
 .greeting_visual_wrap {
   position: relative;
   height: 540px;
@@ -602,14 +597,10 @@ div[class*='_inner']{
 .greeting_text_wrap .greeting_inner p:last-child {
   padding-bottom: 0;
 }
+/* 협회회원사 > 인사말 END */
 
-/* 
-// 협회회원사 > 인사말 
-*/
 
-/* 
-협회회원사 > 협회개요 > 연혁 
-*/
+/* 협회회원사 > 협회개요 > 연혁 */
 .banner_wrap {
   margin-top: 80px;
 }
@@ -760,13 +751,9 @@ div[class*='_inner']{
   width: 100px;
   text-align: center;
 }
-/* 
-// 협회회원사 > 협회개요 > 연혁 
-*/
+/* 협회회원사 > 협회개요 > 연혁 END */
 
-/* 
-협회회원사 > 협회개요 > 미션 및 비전 
-*/
+/* 협회회원사 > 협회개요 > 미션 및 비전 */
 .vision_wrap{}
 .vision_wrap .vision_inner{
   padding: 50px 0 70px;
@@ -842,14 +829,9 @@ div[class*='_inner']{
   font: 600 18px 'NanumSquare';
   color: #222222;
 }
+/* 협회회원사 > 협회개요 > 미션 및 비전 END */
 
-/* 
-// 협회회원사 > 협회개요 > 미션 및 비전 
-*/
-
-/* 
-협회회원사 > 협회개요 > CI소개
-*/
+/* 협회회원사 > 협회개요 > CI소개 */
 .ci_info_wrap{}
 .ci_info_wrap .ci_info_inner{
   padding-top: 50px;
@@ -891,13 +873,9 @@ div[class*='_inner']{
 .ci_signature_wrap .ci_signature_img ul li img{
   display: block;
 }
-/* 
-// 협회회원사 > 협회개요 > CI소개
-*/
+/* 협회회원사 > 협회개요 > CI소개 END */
 
-/* 
-협회회원사 > 정관 및 규정
-*/
+/* 협회회원사 > 정관 및 규정 */
 .aoa_wrap{
   margin-top: 10px;
 }
@@ -1042,6 +1020,751 @@ div[class*='_inner']{
   height: 3px;
   background: url('../../images/sub05/bullet_orange.png') center center no-repeat;
 }
-/* 
-// 협회회원사 > 정관 및 규정
-*/
+/* 협회회원사 > 정관 및 규정 */
+
+/* 협회회원사 > 조직 및 부서별 현황 organization*/
+.list_asso_inner {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.list_asso_inner .org_wrap {
+  overflow: hidden;
+  padding-bottom: 40%;
+}
+
+.org_area {
+  width: 281px;
+  border-radius: 10px;
+  height: 74px;
+  line-height: 74px;
+  margin: 0 auto 40px auto;
+}
+
+.org1 {
+  background: #36649c;
+  position: relative;
+}
+
+.org1:before {
+  position: absolute;
+  left: 50%;
+  top: 68px;
+  content: '';
+  display: block;
+  width: 12px;
+  height: 11px;
+  /* background:#7fa5d3; */
+  background: url('../../images/sub05/org_before01.png')no-repeat;
+  margin-left: -6px;
+  /* transform:rotate(45deg); */
+  z-index: 5;
+}
+
+.org1:after {
+  position: absolute;
+  left: 50%;
+  bottom: -40px;
+  content: '';
+  display: block;
+  width: 1px;
+  height: 35px;
+  background: #c0c0c0;
+  margin-left: -0.5px;
+  z-index: -1;
+}
+
+.org2 {
+  background: #565c8c;
+  position: relative;
+}
+
+.org2:before {
+  position: absolute;
+  left: 50%;
+  top: 68px;
+  content: '';
+  display: block;
+  width: 12px;
+  height: 11px;
+  /* background:#8e93ba; */
+  background: url('../../images/sub05/org_before02.png')no-repeat;
+  margin-left: -6px;
+  /* transform:rotate(45deg); */
+  z-index: 5;
+}
+
+.org2:after {
+  position: absolute;
+  left: 50%;
+  bottom: -40px;
+  content: '';
+  display: block;
+  width: 1px;
+  height: 35px;
+  background: #c0c0c0;
+  margin-left: -0.5px;
+  z-index: -1;
+}
+
+.org_area a {
+  display: block;
+  text-align: center;
+  font: 600 20px/74px 'NanumSquare';
+  color: #fff;
+}
+
+.org_area .org_bar {
+  position: relative;
+}
+
+.org_area .org_bar:before {
+  position: absolute;
+  left: -325px;
+  bottom: -41px;
+  content: '';
+  display: block;
+  width: 588px;
+  height: 1px;
+  background: #c0c0c0;
+  z-index: -1;
+}
+
+.org_area .org_bar:after {
+  position: absolute;
+  left: 280px;
+  bottom: 38px;
+  content: '';
+  display: block;
+  width: 277px;
+  height: 1px;
+  background: #c0c0c0;
+  z-index: -1;
+}
+
+.org_area2 {
+  background: #64b848;
+  height: 64px;
+  width: 270px;
+  line-height: 64px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 18px;
+  position: relative;
+  margin-top: 36px;
+  vertical-align: top;
+}
+
+.org_area2:before {
+  position: absolute;
+  left: 50%;
+  top: 58px;
+  content: '';
+  display: block;
+  width: 11px;
+  height: 11px;
+  /* background:#a2d491; */
+  background: url('../../images/sub05/org_before03.png')no-repeat;
+  margin-left: -5.5px;
+  /* transform:rotate(45deg); */
+  z-index: 5;
+}
+
+.org_area2:after {
+  position: absolute;
+  left: 50%;
+  bottom: -40px;
+  content: '';
+  display: block;
+  width: 1px;
+  height: 35px;
+  background: #c0c0c0;
+  margin-left: -0.5px;
+  z-index: -1;
+}
+
+.org_area2_none {
+  background: none;
+}
+
+.org_area2_none:before {
+  display: none;
+}
+
+.org_area2_none:after {
+  display: none;
+}
+
+.org_area2 a {
+  display: block;
+  text-align: center;
+  font: 600 20px/64px 'NanumSquare';
+  color: #fff;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.org_area2>a:before {
+  position: absolute;
+  left: 50%;
+  top: -35px;
+  content: '';
+  display: block;
+  width: 1px;
+  height: 35px;
+  background: #c0c0c0;
+  margin-left: -0.5px;
+  z-index: -1;
+}
+
+.org_area3 {
+  background: #f2f2f2;
+  height: 64px;
+  width: 270px;
+  line-height: 64px;
+  border-radius: 10px;
+  border: 1px solid #999999;
+  margin-bottom: 10px;
+}
+
+.org_area3 a {
+  display: block;
+  text-align: center;
+  font: 400 18px/64px 'NanumSquare';
+  color: #555555;
+}
+
+.org_area4 {
+  height: 138px;
+}
+
+.org_area4 p {
+  background: #999999;
+  border-radius: 10px;
+  width: 237px;
+  margin: 0 auto;
+  font: 400 18px/60px 'NanumSquare';
+  color: #fff;
+}
+
+.org_area5 {
+  margin-top: 105px;
+  position: relative;
+}
+
+.org_area5:before {
+  position: absolute;
+  left: 50%;
+  top: -220px;
+  content: '';
+  display: block;
+  width: 1px;
+  height: 230px;
+  background: #c0c0c0;
+  z-index: -1;
+  margin-left: -0.5px;
+}
+
+.org_area6 {
+  background: #f08500;
+  height: 64px;
+  width: 271px;
+  line-height: 64px;
+  border-radius: 10px;
+  /* border:1px solid #999999; */
+  margin-bottom: 10px;
+  position: absolute;
+  right: 48px;
+  top: 90px;
+}
+
+.org_area6:before {
+  position: absolute;
+  right: -5px;
+  top: 26px;
+  content: '';
+  display: block;
+  width: 11px;
+  height: 11px;
+  /* background:#ffb457; */
+  background: url('../../images/sub05/org_before04.png')no-repeat;
+  margin-left: -5.5px;
+  /* transform:rotate(45deg); */
+  z-index: 5;
+}
+
+.org_area6:after {
+  position: absolute;
+  right: -50px;
+  top: 32px;
+  content: '';
+  display: block;
+  width: 45px;
+  height: 1px;
+  background: #c0c0c0;
+  margin-left: -0.5px;
+  z-index: -1;
+}
+
+.org_area6 a {
+  display: block;
+  text-align: center;
+  font: 600 20px/64px 'NanumSquare';
+  color: #fff;
+  position: relative;
+}
+
+.org_area6 a:before {
+  position: absolute;
+  right: -51px;
+  top: 32px;
+  content: '';
+  display: block;
+  width: 1px;
+  height: 584px;
+  background: #c0c0c0;
+  margin-left: -0.5px;
+  z-index: -1;
+}
+
+.org_area3 .org_bar2 {
+  position: relative;
+}
+
+.org_area3 .org_bar2:before {
+  position: absolute;
+  right: -51px;
+  top: 32px;
+  content: '';
+  display: block;
+  width: 51px;
+  height: 1px;
+  background: #c0c0c0;
+  margin-left: -0.5px;
+  z-index: -1;
+}
+
+.org_all_popup {
+  position: absolute;
+  left: 680px;
+  top: 228px;
+  display: none;
+  z-index: 7;
+}
+
+.org_popup2 {
+  position: absolute;
+  top: 342px;
+}
+
+.org_popup3 {
+  position: absolute;
+  left: 0;
+  top: 549px;
+}
+
+.org_popup4 {
+  position: absolute;
+  left: 293px;
+  top: 549px;
+}
+
+.org_popup5 {
+  position: absolute;
+  left: 586px;
+  top: 549px;
+}
+
+.org_all_popup .org_boxlayer {
+  /* width:490px;  */
+  width: 100%;
+  height: 305px;
+  border: 5px solid #565c8c;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.org_all_popup .org_boxlayer2 {
+  /* width:505px;  */
+  width: 100%;
+  height: 305px;
+  border: 5px solid #64b848;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.org_all_popup .org_boxlayer .org_txt .org_txt_le {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.org_all_popup .org_boxlayer .org_txt .org_txt_le>img {
+  border: 1px solid #c0c0c0;
+}
+
+.org_all_popup .org_boxlayer .org_txt .org_txt_le h5 {
+  text-align: center;
+  font: 400 18px/25px 'NanumSquare';
+  margin-top: 8px;
+}
+
+.org_all_popup .org_boxlayer .org_txt .org_txt_le h5>span {
+  font: 600 18px/25px 'NanumSquare';
+}
+
+.org_all_popup .org_boxlayer .org_txt .org_txt_ra {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.org_all_popup .org_boxlayer .org_txt .org_txt_ra p {
+  font: 300 16px/24px 'Noto Sans KR';
+  color: #555;
+  margin-left: 20px;
+  letter-spacing: normal;
+}
+
+.org_all_popup .org_boxlayer .org_txt .org_txt_ra p>span {
+  font: 500 16px/24px 'Noto Sans KR';
+  color: #222222;
+  display: block;
+  position: relative;
+}
+
+.org_all_popup .org_boxlayer .org_txt .org_txt_ra p>span:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: 9px;
+  /* background:#565c8c; */
+  background: url('../../images/sub05/org_before05.png')no-repeat;
+  width: 9px;
+  height: 9px;
+  /* transform:rotate(45deg); */
+}
+
+.org_all_popup .org_boxlayer2 .org_txt .org_txt_ra p>span:before {
+  background: url('../../images/sub05/org_before06.png')no-repeat;
+}
+
+.org_table_wrap {}
+
+.table_list .all_ta {
+  display: none;
+}
+
+.table_list .all_ta.on {
+  display: block;
+}
+
+.table_list .ta9 {
+  padding-bottom: 30px;
+}
+
+/* 협회회원사 > 이사회현황 executives */
+.table_foot {
+  padding-top: 30px;
+}
+
+.table_foot .box {
+  border: 1px solid #e5e5e5;
+  background: #f8f8f8;
+}
+
+.table_foot .box p {
+  padding: 20px 0 20px 40px;
+  position: relative;
+  color: #555555;
+  font: 400 15px/30px 'Montserrat', 'Noto Sans KR';
+}
+
+.table_foot .box p:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 34px;
+  width: 3px;
+  height: 3px;
+  background: #f38411;
+}
+
+/* 협회회원사 > 오시는길 location */
+
+.location_list {
+  position: relative;
+}
+
+.location_list ul {
+  border-top: 1px solid #666666;
+}
+
+.location_list ul li {
+  display: block;
+  border-bottom: 1px dashed #999999;
+}
+
+.location_list ul li:last-child {
+  border-bottom: 0;
+}
+
+.location_list ul li h3 {
+  padding: 15px 0;
+  font: 500 16px/30px 'Montserrat', 'Noto Sans KR';
+  color: #222;
+  margin-left: 20px;
+  position: relative;
+}
+
+.location_list ul li h3:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: 25px;
+  background: #0b4fa1;
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+}
+
+.location_list ul li h3 span {
+  font: 400 16px/30px 'Montserrat', 'Noto Sans KR';
+  color: #444444;
+  margin-left: 30px;
+}
+
+.location_map {
+  position: relative;
+  padding: 20px 0 0;
+}
+
+.location_map .location_map_wrap {
+  width: 1200px;
+  height: 480px;
+  border: 1px solid #dddddd;
+  width: 100%;
+}
+
+.location_map .location_map_wrap iframe {
+  width: 100%;
+  height: 480px;
+}
+
+/* 회원사 안내 공통 테이블 시작 */
+
+#contents .sub_title {
+  position: relative;
+  float: left;
+  font: 700 24px/24px 'NanumSquare';
+  color: #0c4fa0;
+  padding-left: 16px;
+  background: url('../../images/sub05/bullet.jpg') no-repeat 0 7px;
+}
+
+#contents .check_circle {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  text-indent: -3000px;
+}
+
+#contents .no_circle {
+  display: inline-block;
+  text-indent: -3000px;
+}
+
+#contents .member_company_table .sorting_wrap {
+  position: relative;
+  padding: 50px 0 10px;
+  top: initial;
+}
+
+#contents .member_company_table table th,
+#contents .member_company_table table td {
+  overflow: hidden;
+  line-height: 20px;
+  white-space: initial;
+}
+
+#contents .member_company_table table td {
+  padding: 0;
+}
+
+#contents .member_company_table table td.address {
+  text-align: left;
+  padding-left: 20px;
+}
+
+#contents .member_company_table table td.align_L.bold {
+  height: auto;
+  padding: 0;
+  padding: 10px 20px;
+}
+
+#contents .member_company_table table {
+  margin-bottom: 120px;
+}
+
+#contents .member_company_table .refer {
+  position: relative;
+  top: -60px;
+  width: 1200px;
+  margin: 0 auto 20px;
+}
+
+#contents .member_company_table .refer div {
+  font-size: 16px;
+  line-height: 50px;
+}
+
+/* 회원사 안내 공통 테이블 끝 */
+
+/* 회원가입 안내 시작 */
+#contents .membership_register {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#contents .membership_register .sub_title {
+  line-height: 32px;
+}
+
+#contents .membership_register .membership_register_wrap .informations {
+  padding: 40px 0;
+  border-top: 1px solid #000;
+}
+
+#contents .membership_register .membership_register_wrap .informations:nth-child(2) {
+  border-top: 2px dotted #d1d1d1;
+}
+
+#contents .membership_register .membership_register_wrap .informations .informations_head {
+  vertical-align: top;
+  position: absolute;
+  left: 0;
+}
+
+#contents .membership_register .membership_register_wrap .informations ul {
+  position: relative;
+  left: 285px;
+}
+
+#contents .membership_register .membership_register_wrap .informations ul li {
+  position: relative;
+  font: 400 16px/30px 'Noto Sans KR';
+  color: #000;
+  padding-left: 15px;
+}
+
+#contents .membership_register .membership_register_wrap .informations ul li::before {
+  display: block;
+  content: '';
+  clear: both;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  width: 3px;
+  height: 3px;
+  background: #555;
+  border-radius: 50%;
+}
+
+#contents .membership_register .membership_register_wrap .metaphor {
+  position: relative;
+  border: 1px solid #e5e5e5;
+  padding: 35px;
+  margin-bottom: 30px;
+}
+
+#contents .membership_register .membership_register_wrap .metaphor:last-child {
+  margin: 0;
+}
+
+#contents .membership_register .membership_register_wrap .metaphor .metaphor_head {
+  position: relative;
+  left: 25px;
+}
+
+#contents .membership_register .membership_register_wrap .metaphor .metaphor_head .sub_title_notice {
+  position: relative;
+  right: 40px;
+  float: right;
+  font: 500 15px/15px 'Noto Sans KR';
+  color: #555;
+}
+
+#contents .membership_register .membership_register_wrap .metaphor ul {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#contents .membership_register .membership_register_wrap .metaphor ul li {
+  display: inline-block;
+  position: relative;
+  width: 130px;
+  text-align: center;
+  margin-right: 130px;
+  font: 700 17.9px/17.9px 'NanumSquare';
+  color: #000;
+  white-space: nowrap;
+}
+
+#contents .membership_register .membership_register_wrap .metaphor ul li:last-child {
+  margin: 0;
+}
+
+#contents .membership_register .membership_register_wrap .metaphor ul li img {
+  display: block;
+  margin-bottom: 45px;
+}
+
+#contents .membership_register .membership_register_wrap .metaphor ul li .numbering {
+  position: absolute;
+  top: 0px;
+  left: -30px;
+}
+
+#contents .membership_register .membership_register_wrap .metaphor .lines {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1150px;
+  height: 1px;
+  background: #ddd;
+}
+
+#contents .membership_register .membership_register_wrap .metaphor .lines img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#contents .membership_register .membership_register_wrap .btn_wrap .btn_inner a {
+  background: #222;
+  width: 230px;
+}
+
+#contents .membership_register .membership_register_wrap .common_note {
+  margin-bottom: 40px;
+}
+
+/* 회원가입 안내 끝 */
+
+/*****
+*
+* sub05 END
+*
+*****/

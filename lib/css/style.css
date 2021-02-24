@@ -89,6 +89,21 @@
   top: -57px;
 }
 
+.list_wrap .sorting_wrap h4{
+  font:700 24px/34px 'NanumSquare';
+  color:#0c4fa0;
+  text-align: left;
+  letter-spacing: -1px;
+  float: left;
+}
+
+.list_wrap .sorting_wrap h4 span{
+  font:500 24px/34px 'Montserrat';
+  color:#0c4fa0;
+  text-align: left;
+  letter-spacing: -1px;
+}
+
 .list_wrap .sorting_wrap .btn_excel{
   width: 154px;
   height: 38px;
@@ -166,6 +181,39 @@
   letter-spacing: -0.6px;
   vertical-align: top;
   display: inline-block;
+}
+
+
+.list_wrap .print_wrap{
+  width: 1200px;
+  margin: 12px auto 0;
+}
+
+.list_wrap .print_wrap .print{
+  display: inline-flex;
+  font:400 15px/40px 'Montserrat','Noto Sans KR';
+  color:#222;
+  text-align: left;
+  letter-spacing: -0.6px;
+  float: right;
+}
+
+.list_wrap .print_wrap .print .ico_print{
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-left: 5px;
+  vertical-align: top;
+  margin-top: 7px;
+  background: url('../../images/common/sprite.png')no-repeat -33px -203px;
+}
+
+.list_wrap .print_wrap .print:hover{
+  color:#0c4da2;
+}
+
+.list_wrap .print_wrap .print:hover .ico_print{
+  background: url('../../images/common/sprite.png')no-repeat -64px -203px;
 }
 
 .list_table_wrap{
@@ -297,6 +345,12 @@
 .tap_cont_wrap{
   width: 100%;
   position: relative;
+}
+
+.tap_cont_inner.border{
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+  padding: 10px 0;
 }
 
 .tap_cont_inner{
@@ -494,4 +548,538 @@
 
 .desc_wrap .desc_title{
   display: inline-block;
+}
+
+.cont_box_wrap{
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.cont_box_wrap .cont_box_inner{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.cont_box_wrap .cont_box_inner .cont_box{
+  width: 570px;
+  margin-bottom: 60px;
+}
+
+.cont_box_wrap .cont_box_inner .left{
+  float: left;
+}
+
+.cont_box_wrap .cont_box_inner .right{
+  float: right;
+}
+
+.cont_box_wrap .cont_box_inner .cont_box .title{
+  margin-bottom: 30px;
+  font-size: 0;
+  position: relative;
+}
+
+.cont_box_wrap .cont_box_inner .cont_box .title h4{
+  display: inline-block;
+  text-align: left;
+  font: 700 24px/24px 'NanumSquare';
+  color:#0c4fa0;
+  vertical-align: middle;
+  margin-top: 2px;
+}
+
+.cont_box_wrap .cont_box_inner .cont_box .title .btn_more{
+  width: 18px;
+  height: 18px;
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 7px;
+  background: url('../../images/common/sprite.png')no-repeat 0 -69px;
+}
+
+.cont_box_wrap .cont_box_inner .cont_box .title .btn_more:hover{
+  background: url('../../images/common/sprite.png')no-repeat -22px -69px;
+}
+
+.cont_box_wrap .cont_box_inner .cont_box .title .btn_more:focus{
+  background: url('../../images/common/sprite.png')no-repeat -22px -69px;
+}
+
+.cont_box_wrap .cont_box_inner .cont_box .list_box{
+  border-top: 1px solid #666;
+}
+
+.cont_box_wrap .cont_box_inner .cont_box .list_box li{
+  display: block;
+  border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  padding: 0 20px;
+  height: 56px;
+}
+
+.cont_box_wrap .cont_box_inner .cont_box .list_box li:hover{
+  background-color: #f1f5f8;
+}
+
+.cont_box_wrap .cont_box_inner .cont_box .list_box li a{
+  display: block;
+  text-align: left;
+  font-size: 0;
+}
+
+.cont_box_wrap .cont_box_inner .cont_box .list_box li a p{
+  text-align: left;
+  font: 400 15px/56px 'Montserrat','Noto Sans KR';
+  color:#222;
+  width: 512px;
+  display: inline-block;
+  letter-spacing: -0.8px;
+}
+
+.cont_box_wrap .cont_box_inner .cont_box .list_box li.sub a p::before{
+  content: '';
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background: url('../../images/common/sprite.png')no-repeat -13px -243px;
+  vertical-align: top;
+  margin: 23px 8px 0 0;
+}
+
+.cont_box_wrap .cont_box_inner .cont_box .list_box li a .ico_download{
+  width: 18px;
+	height: 18px;
+	display: inline-block;
+	background: url('../../images/common/sprite.png')no-repeat 0 -158px;
+	vertical-align: top;
+  margin-top: 19px;
+}
+
+.data_table_wrap2{
+  width: 100%;
+  position: relative;
+}
+
+.data_table_wrap2 table{
+  width: 1200px;
+  margin: 0 auto;
+  table-layout: fixed;
+  border-collapse: separate;
+}
+
+.data_table_wrap2 table th{
+	border-right: 1px solid #e5e5e5;
+}
+
+.data_table_wrap2 table th.bdn{
+	border-right: none;
+}
+
+.data_table_wrap2 table td{
+	font:400 16px/56px 'Montserrat','Noto Sans KR';
+	color:#222;
+	border-right: 1px solid #e5e5e5;
+	padding: 0 20px;
+}
+
+.data_table_wrap2 table td:last-child{
+	border-right: none;
+}
+
+
+.data_table_wrap2 table th:last-child{
+	border-right: none;
+}
+
+.data_table_wrap2 table td.bold{
+	font:700 16px/22px 'Montserrat','Noto Sans KR';
+	color:#222;
+}
+
+.data_table_wrap2 table tr:hover td{
+	background-color: #fff;
+}
+
+.data_table_wrap2 table tr.on td{
+	background-color: #fff;
+}
+
+.data_table_wrap2 table tr.sum td{
+	background-color: #f1f5f8;
+}
+
+.data_table_wrap2 table tbody tr:last-child td{
+  border-bottom: none;
+}
+
+.data_table_wrap2 table tbody tr.border td{
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.data_table_wrap2 table tbody tr.bg td{
+  background-color: #f1f5f8;
+}
+
+.data_table_wrap2 table tfoot tr td{
+  background-color: #f1f5f8;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+
+.data_table_wrap2 table tfoot tr:hover td{
+	background-color: #f1f5f8;
+}
+
+.cont_box{
+  margin-top: 80px;
+  font-size: 0;
+}
+
+.cont_box.mat0{
+  margin-top: 0;
+}
+
+.cont_box.mab0{
+  margin-bottom: 0 !important;
+}
+
+.cont_box .title_type1{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.cont_box .title_type1 h4{
+  font:700 24px/24px 'NanumSquare';
+	color:#0c4fa0;
+  vertical-align: top;
+}
+
+.cont_box .title_type1 h4 span{
+  font:600 24px/24px 'Montserrat','Noto Sans KR';
+  color:#0c4fa0;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.cont_box .cont_type1{
+  display: inline-block;
+  margin-left: 70px;
+  margin-top: -4px;
+}
+
+.cont_box .cont_type1 .txt{
+  font:400 16px/26px 'Montserrat','Noto Sans KR';
+  color:#555;
+  vertical-align: top;
+}
+
+.cont_box .cont_type1 .txt::before{
+  content: '';
+  width: 3px;
+  height: 3px;
+  background-color: #666;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px 10px 0 0;
+}
+
+.cont_box .cont_type1 .sub_txt{
+  font:400 16px/26px 'Montserrat','Noto Sans KR';
+  color:#555;
+  vertical-align: top;
+  margin-left: 13px;
+}
+
+.cont_box .title_type2{
+  display: block;
+  vertical-align: top;
+}
+
+.cont_box .title_type2 h4{
+  font:700 24px/24px 'NanumSquare';
+	color:#0c4fa0;
+  vertical-align: top;
+}
+
+.cont_box .title_type2 h4 span{
+  font:600 24px/24px 'Montserrat','Noto Sans KR';
+  color:#0c4fa0;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.cont_box .cont_type2{
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.cont_box .cont_type2 .diagram_wrap{
+  width: 1200px;
+  height: 433px;
+  background-color: #f2f2f2;
+  border-radius: 100px;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+
+.cont_box .cont_type2 .diagram_wrap ul{
+  font-size: 0;
+}
+
+.cont_box .cont_type2 .diagram_wrap li{
+  display: inline-block;
+  width: 192px;
+  height: 394px;
+  background-color: #fff;
+  border-radius: 100px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.cont_box .cont_type2 .diagram_wrap .arrow{
+  width: 16px;
+  height: 25px;
+  background: url('../../images/common/sprite.png')no-repeat 0 -257px;
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.cont_box .cont_type2 .diagram_wrap li .tit{
+  width: 152px;
+  height: 139px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+  margin: 0 auto;
+  position: relative;
+}
+
+.cont_box .cont_type2 .diagram_wrap li .tit p{
+  width: 152px;
+  font:700 18px/26px 'NanumSquare';
+  color:#222;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  letter-spacing: -0.8px;
+}
+
+.cont_box .cont_type2 .diagram_wrap li .txt{
+  width: 152px;
+  margin: 24px auto 0;
+  text-align: center;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.cont_box .cont_type2 .diagram_wrap li .txt .bold{
+  font:500 16px/26px 'Montserrat','Noto Sans KR';
+  color:#444;
+}
+
+.cont_box .cont_type2 .diagram_wrap li .txt p{
+  font:300 16px/26px 'Montserrat','Noto Sans KR';
+  color:#444;
+  margin-bottom: 8px;
+  text-align: left;
+  letter-spacing: -1px;
+}
+
+
+.tap_cont_box{
+  margin-top: 40px;
+  padding-bottom: 10px;
+  font-size: 0;
+  border-bottom: 1px dashed #c2c2c2;
+}
+
+.tap_cont_box.last{
+  border-bottom: none;
+}
+
+.tap_cont_box.top{
+  margin-top: 80px;
+}
+
+.tap_cont_box .blue_tit{
+  display: inline-block;
+  vertical-align: top;
+  width: 280px;
+}
+
+.tap_cont_box .dia_bul::before{
+  margin-top: 7px;
+}
+
+.tap_cont_box .blue_tit h4{
+  font:700 24px/24px 'NanumSquare';
+	color:#0c4fa0;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.tap_cont_box .blue_tit h4 span{
+  font:600 24px/24px 'Montserrat','Noto Sans KR';
+  color:#0c4fa0;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.tap_cont_box .cont_type3{
+  display: inline-block;
+  font-size: 0;
+}
+
+.tap_cont_box .cont_type3 .tit{
+  font:500 16px/26px 'Montserrat','Noto Sans KR';
+  color:#222;
+  vertical-align: top;
+  display:inline-block;
+  width: 870px;
+  letter-spacing: -0.8px;
+  margin-bottom: 5px;
+}
+
+.tap_cont_box .cont_type3 .txt{
+  font:400 16px/26px 'Montserrat','Noto Sans KR';
+  color:#555;
+  vertical-align: top;
+  display:inline-block;
+  width: 870px;
+  letter-spacing: -0.8px;
+}
+
+.tap_cont_box .cont_type3 .txt2{
+  font:400 16px/26px 'Montserrat','Noto Sans KR';
+  color:#555;
+  vertical-align: top;
+  display:inline-block;
+  width: 870px;
+  letter-spacing: -0.8px;
+  padding-left: 14px;
+}
+
+.tap_cont_box .cont_type3 .txt_b{
+  font:400 16px/26px 'Montserrat','Noto Sans KR';
+  color:#222;
+  vertical-align: top;
+  display:inline-block;
+  width: 870px;
+  letter-spacing: -0.8px;
+}
+
+.tap_cont_box .cont_type3 .txt .light{
+  font:300 16px/26px 'Montserrat','Noto Sans KR';
+  color:#777;
+}
+
+.tap_cont_box .cont_type3 .link{
+  margin-left: 15px;
+  font:400 16px/16px 'Montserrat','Noto Sans KR';
+  color:#0c4fa0;
+  margin-top: 5px;
+}
+
+.tap_cont_box .cont_type3 .link a{
+  font:400 16px/16px 'Montserrat','Noto Sans KR';
+  color:#0c4fa0;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.tap_cont_box .cont_type3 .cont_area{
+  margin-bottom: 30px;
+  width: 890px;
+}
+
+.tap_cont_box .cont_type3 .cont_area .dot{
+  width: 3px;
+  height: 3px;
+  background-color: #666;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px 10px 0 0;
+}
+
+.tap_cont_box .cont_type3 .cont_area .dot_b{
+  width: 3px;
+  height: 3px;
+  background-color: #222;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px 10px 0 0;
+}
+
+.tap_cont_box .cont_type3 .cont_area .ico_download{
+  width: 14px;
+  height: 14px;
+  background: url('../../images/common/sprite.png')no-repeat -41px -160px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 16px 5px 0 0;
+}
+
+.tap_cont_box .cont_type3 .cont_area .imgbox{
+  margin-top: 15px;
+}
+
+.tap_cont_box .cont_type3 .cont_area .btn_inner{
+  width: 920px;
+  margin: 30px auto 0;
+  font-size: 0;
+}
+
+.tap_cont_box .cont_type3 .cont_area .btn_inner a{
+  margin-left: 10px;
+}
+
+.tap_cont_box .cont_type3 .cont_area .btn_inner a:first-child{
+  margin-left: 0;
+}
+
+.tap_cont_box .cont_type3 .cont_area .btn_inner .btn_white{
+  width: 300px;
+}
+
+.tap_cont_box .cont_type3 .cont_area .btn_white.small{
+  width: 166px;
+}
+
+.tap_cont_box .cont_type3 .cont_area .btn_inner .btn_black{
+  width: 300px;
+}
+
+.tap_cont_box .cont_type3 .cont_area .btn_inner .btn_white.half{
+  width: 455px;
+}
+
+.tap_cont_box .cont_type3 .cont_area .btn_inner .btn_black.half{
+  width: 455px;
+}
+
+.tap_cont_box .cont_type3 .cont_area .data_table_wrap{
+  margin-top: 15px;
+}
+
+.tap_cont_box .cont_type3 .cont_area .data_table_wrap table{
+  width: 920px;
+}
+
+.tap_cont_box .cont_type3 .cont_area .common_note{
+  width: 920px;
+}
+
+.tap_cont_box .cont_type3 .cont_area .common_note p{
+  width: 850px;
+}
+
+.btn_wrap.type2 .btn_inner{
+  margin-top: 50px;
+}
+
+.btn_wrap.type2 .btn_inner .btn_black{
+  width: 226px;
 }
