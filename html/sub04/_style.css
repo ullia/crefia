@@ -1,0 +1,210 @@
+/*****
+*
+* sub04 정보센터 > 여신금융연구소
+*
+*****/
+
+.mt50{margin-top: 50px;}
+.mt60{margin-top: 60px;}
+.mb40{margin-bottom: 40px;}
+.mb0{margin-bottom: 0 !important;}
+.mb80{margin-bottom: 80px;}
+.mb100{margin-bottom: 100px;}
+.mb120{margin-bottom: 120px;}
+
+.list_gallery_wrap{
+    margin: 60px auto 0;
+    width: 1200px;
+    border-top:1px solid #222222;
+    border-bottom:1px solid #222222;
+}
+.list_gallery_wrap ul{
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.list_gallery_wrap ul li{
+    float: left;
+    width: 270px;
+    height: 320px;
+    margin-right: 40px;
+    /* padding: 0 60px; */
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.list_gallery_wrap ul li:nth-child(4n) {
+    margin-right: 0;
+}
+.list_gallery_wrap ul li a{
+    display: block;
+    height: 100%;
+}
+.list_gallery_wrap ul li a img{
+    margin-top: 30px;
+}
+.list_gallery_wrap ul li a p{
+    /* display: inline-block; */
+    padding-top: 5px;
+    font: 500 16px 'Montserrat','Noto Sans KR';
+    color: #222222;
+    text-align: center;
+}
+.list_gallery_wrap ul li a p.title{}
+.list_gallery_wrap ul li a p.date{
+    font-size: 15px;
+    color: #555555;
+}
+.list_gallery_wrap ul li:hover a p {
+    color: #0b4fa1;
+    text-decoration: underline;
+    /* border-bottom: 1px solid #0b4fa1; */
+}
+
+.list_view_cont_wrap .download_all_btn{
+    width: 100%;
+    background: #f1f5f8;
+    text-align: center;
+}
+.list_view_cont_wrap .download_all_btn a{
+    display: inline-block;
+    font: 500 16px/64px 'Noto Sans KR';
+    color: #0b4fa1;
+    text-align: center;
+}
+.list_view_cont_wrap .download_all_btn a span{
+    margin-left: 10px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url('../../images/common/sprite.png')no-repeat 0 -158px;
+    vertical-align: middle;
+}
+.list_view_cont_wrap .download_each_section {
+    margin-top: 30px;
+    padding: 10px 30px;
+    border: 1px solid #e5e5e5;
+}
+.list_view_cont_wrap .download_each_section > *{
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.list_view_cont_wrap .download_each_section h5 {
+    position: relative;
+    display: inline-block;
+    padding-top: 28px;
+    width: 20%;
+    font: 500 16px/16px 'Noto Sans KR';
+    color: #222222;
+}
+.list_view_cont_wrap .download_each_section h5:before {
+    content: '';
+    display: inline-block;
+    margin-right: 13px;
+    width: 3px;
+    height: 3px;
+    vertical-align: middle;
+    background: url(../../images/sub05/bullet_gray.png) center center no-repeat;
+}
+.list_view_cont_wrap .download_each_section ul {
+    width: 80%;
+}
+.list_view_cont_wrap .download_each_section ul li {
+    position: relative;
+    /* height: 100px; */
+    padding: 25px 16px;
+    border-bottom: 1px dashed #e5e5e5;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.list_view_cont_wrap .download_each_section ul li a {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 18px;
+    height: 18px;
+    transform: translateY(-50%);
+    background: url(../../images/common/ico_download_gray.png)center center no-repeat;
+    vertical-align: middle;
+}
+.list_view_cont_wrap .download_each_section ul li:last-child{
+    border-bottom: 0 none;
+}
+.list_view_cont_wrap .download_each_section ul li p {}
+.list_view_cont_wrap .download_each_section ul li p.p_title {
+    padding-right: 100px;
+    position: relative;
+    font: 400 16px 'Noto Sans KR';
+    color: #222222;
+}
+.list_view_cont_wrap .download_each_section ul li p.p_title:before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 11px;
+    left: -16px;
+    width: 3px;
+    height: 3px;
+    background: url(../../images/sub05/bullet_gray.png) center center no-repeat;
+}
+.list_view_cont_wrap .download_each_section ul li p.p_by {
+    padding-top: 8px;
+    font: 400 16px/16px 'Noto Sans KR';
+    color: #666666;
+}
+/*hover*/
+.list_view_cont_wrap .download_each_section ul li:hover a {
+    background: url(../../images/common/ico_download_blue.png)center center no-repeat;
+}
+.list_view_cont_wrap .download_each_section ul li:hover p.p_title {
+    color: #0b4fa1;
+    text-decoration: underline;
+}
+.list_view_cont_wrap .download_each_section ul li:hover p.p_title:before {
+    background: url(../../images/common/bullet_blue.png) center center no-repeat;
+}
+
+
+
+
+.gallery_view_side {
+    float: left;
+    width: 380px;
+    text-align: center;
+}
+.gallery_view_side .gallery_view-inner {
+    display: inline-block;
+    width: 240px;
+}
+.gallery_view_side .gallery_view-inner .thumb{
+    overflow: hidden;
+    display: block;
+    width: 240px;
+    height: 330px;
+    margin-bottom: 30px;
+}
+.gallery_cont{
+    float: left;
+    width: 780px;
+}
+.gallery_cont .download_each_section:first-child {
+    margin-top: 0;
+}
+.gallery_cont .download_each_section h5{
+    width: 24%;
+}
+.gallery_cont .download_each_section ul {
+    width: 76%;
+}
+.gallery_cont .download_each_section ul li p.p_title {
+    padding-right: 50px;
+}
+/*****
+*
+// sub04 정보센터 > 여신금융연구소
+*
+*****/
